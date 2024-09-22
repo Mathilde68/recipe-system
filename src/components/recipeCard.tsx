@@ -1,5 +1,6 @@
 import { Card, CardBody, Image, Heading, Text } from "@chakra-ui/react";
 import { Recipe } from "../hooks/useRecipes";
+import RecipeTag from "./RecipeTag";
 
 
 interface Props {
@@ -13,7 +14,7 @@ interface Props {
           <Heading fontSize="2xl">{recipe.title}</Heading>
           <Text fontSize={"xl"}>{recipe.category.name}</Text>
           {recipe.ingredient_tags.map((ingredientTag) => (
-             <Text key={ingredientTag._id}>{ingredientTag.name}</Text>
+            <RecipeTag tag={ingredientTag} />
       ))}
         {recipe.diet_type_tags.map((ingredientTag) => (
              <Text key={ingredientTag._id}>{ingredientTag.name}</Text>

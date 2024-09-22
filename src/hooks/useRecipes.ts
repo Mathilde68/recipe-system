@@ -12,7 +12,7 @@ interface Ingredient {
   amount: string;
 }
 
-interface Tag {
+export interface Tag {
     _id: string;
     name: string;
   }

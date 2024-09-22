@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box,SimpleGrid, Heading } from '@chakra-ui/react';
 import useRecipes from '../hooks/useRecipes';
-import RecipeCard from './recipeCard';
+import RecipeCard from "./RecipeCard";
 
 const RecipeList = () => {
   const recipes = useRecipes();
