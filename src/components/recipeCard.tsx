@@ -16,8 +16,8 @@ interface Props {
           {recipe.ingredient_tags.map((ingredientTag) => (
             <RecipeTag tag={ingredientTag} />
       ))}
-        {recipe.diet_type_tags.map((ingredientTag) => (
-             <Text key={ingredientTag._id}>{ingredientTag.name}</Text>
+        {recipe.diet_type_tags.map((dietTag) => (
+             <RecipeTag tag={dietTag} />
       ))}
          
 

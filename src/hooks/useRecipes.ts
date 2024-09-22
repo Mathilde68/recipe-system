@@ -15,6 +15,7 @@ interface Ingredient {
 export interface Tag {
     _id: string;
     name: string;
+    color: string;
   }
 
 export interface Recipe {
