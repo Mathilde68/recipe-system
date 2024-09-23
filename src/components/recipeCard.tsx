@@ -16,7 +16,7 @@ interface Props {
 
     const img_url = img_preurl+recipe.image_src
     return (
-      <Card borderRadius={"1.5rem"} height={"280px"} width={"350px"}>
+      <Card borderRadius={"1.5rem"} height={"280px"}>
         <Image  borderRadius={"1.5rem 1.5rem 0rem 0rem"} width={"100%"} height={"180px"} objectFit='cover' src={img_url} alt={recipe.title} />
         <CardBody>
           <Heading fontSize="xl">{recipe.title}</Heading>
