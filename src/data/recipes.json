@@ -2,7 +2,7 @@
     {
       "title": "Chocolate Chip Cookies",
       "category": {"_id": "cat_1", "name": "Cookies"},
-      "image_src": "https://example.com/images/chocolate_chip_cookies.jpg",
+      "image_src": "cookie.jpg",
       "ingredients": [
         {"name": "Flour", "amount": "200 g"},
         {"name": "Sugar", "amount": "100 g"},
@@ -24,7 +24,7 @@
     {
       "title": "Raspberry Tart",
       "category": {"_id": "cat_2", "name": "Tarts"},
-      "image_src": "https://example.com/images/raspberry_tart.jpg",
+      "image_src": "raspberry_tart.jpg",
       "ingredients": [
         {"name": "Flour", "amount": "100 g"},
         {"name": "Butter", "amount": "100 g"},
@@ -46,7 +46,7 @@
     {
       "title": "Brownies",
       "category": {"_id": "cat_3", "name": "Skærekager"},
-      "image_src": "https://example.com/images/raspberry_tart.jpg",
+      "image_src": "brownie.jpg",
       "ingredients": [
         {"name": "Flour", "amount": "100 g"},
         {"name": "Butter", "amount": "100 g"},
@@ -72,7 +72,7 @@
     {
       "title": "Apple pie",
       "category": {"_id": "cat_2", "name": "Tarts"},
-      "image_src": "https://example.com/images/raspberry_tart.jpg",
+      "image_src": "applepie.jpg",
       "ingredients": [
         {"name": "Flour", "amount": "100 g"},
         {"name": "Lactosefree Butter", "amount": "100 g"},
