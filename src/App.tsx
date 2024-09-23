@@ -1,19 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-
-import * as React from 'react'
-
-// 1. import `ChakraProvider` component
-import { ChakraProvider } from '@chakra-ui/react'
-import RecipeList from './components/RecipeList'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import "./App.css";
+import * as React from "react";
+import RecipeList from "./components/RecipeList";
+import NavBar from "./components/NavBar";
+import { Grid, GridItem } from "@chakra-ui/react";
 
 function App() {
-  // 2. Wrap ChakraProvider at the root of your app
   return (
-    <ChakraProvider>
-     <RecipeList />
-    </ChakraProvider>
-  )
+    <Grid
+      templateAreas={{
+        lg: `"nav nav"
+           "aside main"`
+
+      }}
+      templateColumns={{
+        lg: "200px 1fr",
+      }}
+    >
+      <GridItem area={"nav"}>
+        <NavBar />
+      </GridItem>
+
+      <GridItem area={"aside"}></GridItem>
+
+      <GridItem area={"main"}>
+        <RecipeList />
+      </GridItem>
+    </Grid>
+  );
 }
-export default App
+export default App;
