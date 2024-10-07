@@ -15,7 +15,7 @@ const RecipeList = () => {
     
       {recipes.map((recipe) => (
         
-          <RecipeCard  recipe={recipe} />
+          <RecipeCard key={recipe.title}recipe={recipe} />
        
       ))}
     </SimpleGrid>

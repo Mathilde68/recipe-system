@@ -3,9 +3,10 @@ import reactLogo from "./assets/react.svg";
 import * as React from "react";
 import RecipeList from "./components/RecipeList";
 import NavBar from "./components/NavBar";
-import { Grid, GridItem } from "@chakra-ui/react";
+import { Center, Grid, GridItem, Heading, useColorMode } from "@chakra-ui/react";
 
 function App() {
+  const { colorMode } = useColorMode(); 
   return (
     <Grid
     templateAreas={{
@@ -22,9 +23,10 @@ function App() {
         <NavBar />
       </GridItem>
 
-      <GridItem area={"aside"} bg={"pink.200"} height={"100vh"}></GridItem>
+      <GridItem area={"aside"}  bg={colorMode === "dark" ? "darkbrown.500" : "creamwhite.500"} height={"100vh"}></GridItem>
 
       <GridItem area={"main"}>
+      <Heading size="lg" textAlign={"center"}>Cakes & Sweets recipes </Heading>
         <RecipeList />
       </GridItem>
     </Grid>
