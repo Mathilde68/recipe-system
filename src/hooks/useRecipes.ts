@@ -15,10 +15,10 @@ interface Ingredient {
 export interface Tag {
     _id: string;
     name: string;
-    color: string;
   }
 
 export interface Recipe {
+  _id: string;
   title: string;
   category: Category;
   image_src: string;

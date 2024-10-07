@@ -89,6 +89,22 @@ const theme = extendTheme({
       },
     }),
   },
+  components: {
+    Switch: {
+      baseStyle: {
+        // This will apply your custom colors to the switch track and thumb
+        track: {
+          bg: "peachbrown.200", // Base color for light mode
+          _checked: {
+            bg: "peachbrown.500", // Base color for dark mode
+          },
+        },
+        thumb: {
+          bg: "creamwhite.500", // Thumb color
+        },
+      },
+    },
+  },
  
 });
 

@@ -7,6 +7,7 @@ const ColorModeSwitch = () => {
       <Switch
         onChange={toggleColorMode}
         colorScheme="peachbrown"
+        color={"peachbrown.500"}
         isChecked={colorMode === "dark"}
       />
       <Text>Dark mode</Text>

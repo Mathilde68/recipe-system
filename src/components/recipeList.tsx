@@ -1,5 +1,4 @@
-import React from 'react';
-import { Box,SimpleGrid, Heading } from '@chakra-ui/react';
+import { SimpleGrid} from '@chakra-ui/react';
 import useRecipes from '../hooks/useRecipes';
 import RecipeCard from "./RecipeCard";
 
@@ -15,7 +14,7 @@ const RecipeList = () => {
     
       {recipes.map((recipe) => (
         
-          <RecipeCard key={recipe.title}recipe={recipe} />
+          <RecipeCard key={recipe._id}recipe={recipe} />
        
       ))}
     </SimpleGrid>
