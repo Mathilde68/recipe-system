@@ -1,35 +1,40 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import * as React from "react";
+
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
 import RecipeList from "./components/RecipeList";
-import NavBar from "./components/NavBar";
-import { Center, Grid, GridItem, Heading, useColorMode } from "@chakra-ui/react";
+import RecipeDetails from "./components/RecipeDetails";
+import Layout from "./components/Layout";
+import { Heading } from "@chakra-ui/react";
+
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",   // Root path, using Layout as the shared component
+    element: <Layout />,  
+    children: [
+      {
+        path: "/",    // Home page
+        element: 
+        <>
+        <Heading>Cakes & Sweets recipe collection</Heading>
+        <RecipeList />
+        </>
+        
+      },
+      {
+        path: "recipe/:id",   // Recipe details page
+        element: <RecipeDetails />,
+      },
+    ],
+  },
+]);
 
 function App() {
-  const { colorMode } = useColorMode(); 
-  return (
-    <Grid
-    templateAreas={{
-      lg: `"nav nav"
-           "aside main"`,
-      base: `"nav" "main"`,
-    }}
-    templateColumns={{
-      lg: "200px 1fr",
-      base: "1fr",
-    }}
-  >
-      <GridItem area={"nav"}>
-        <NavBar />
-      </GridItem>
-
-      <GridItem area={"aside"}  bg={colorMode === "dark" ? "darkbrown.500" : "creamwhite.500"} height={"100vh"}></GridItem>
-
-      <GridItem area={"main"}>
-      <Heading size="lg" textAlign={"center"}>Cakes & Sweets recipes </Heading>
-        <RecipeList />
-      </GridItem>
-    </Grid>
-  );
+  
+  return <RouterProvider router={router} />;
 }
 export default App;

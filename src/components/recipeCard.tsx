@@ -1,7 +1,8 @@
-import { Card, CardBody, Image, Heading, Text, useColorMode } from "@chakra-ui/react";
+import { Card, CardBody, Image, Heading, Text, useColorMode} from "@chakra-ui/react";
 import { Recipe } from "../hooks/useRecipes";
 import RecipeTag from "./RecipeTag";
 import { px } from "framer-motion";
+import { Link } from "react-router-dom";
 
 
 interface Props {
@@ -17,6 +18,7 @@ interface Props {
     const { colorMode } = useColorMode(); 
     const img_url = img_preurl+recipe.image_src
     return (
+      <Link to={`/recipe/${recipe._id}`}> 
       <Card borderRadius={"1.5rem"} height={"280px"}  bg={colorMode === "dark" ? "darkbrown.500" : "creamwhite.500"} >
         <Image  borderRadius={"1.5rem 1.5rem 0rem 0rem"} width={"100%"} height={"180px"} objectFit='cover' src={img_url} alt={recipe.title} />
         <CardBody>
@@ -33,6 +35,7 @@ interface Props {
 
         </CardBody>
       </Card>
+     </Link>
     );
   };
   
