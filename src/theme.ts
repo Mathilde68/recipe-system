@@ -1,5 +1,6 @@
 import { CardBody, extendTheme, type ThemeConfig } from "@chakra-ui/react";
 import type { StyleFunctionProps } from '@chakra-ui/styled-system'
+import { mode } from "@chakra-ui/theme-tools";
 
 
 const config: ThemeConfig = {
@@ -8,7 +9,7 @@ const config: ThemeConfig = {
 
 const theme = extendTheme({ 
   config,
-    fonts: {
+  fonts: {
     heading: `"Frank Ruhl Libre", serif`,
     body: `"Inter", sans-serif`,
   },
@@ -88,7 +89,7 @@ const theme = extendTheme({
   },
   styles: {
     global: (props: any) => ({
-      body: {
+    body: {
         bg: props.colorMode === "dark" ? "richblack.800" : "palecream.500", // Background for dark/light mode
         color: props.colorMode === "dark" ? "palecream.500" : "darkbrown.500", // Text color for dark/light mode
       },
@@ -109,6 +110,11 @@ const theme = extendTheme({
         },
       },
     },
+    Text: {
+      baseStyle: (props: any) => ({
+        color: props.colorMode === "dark" ? "palecream.500" : "darkbrown.500", //Overring text color on component level to make it work
+      })
+    }
   },
  
 });

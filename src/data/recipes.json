@@ -5,10 +5,10 @@
       "category": {"_id": "cat_1", "name": "Cookies"},
       "image_src": "cookie.jpg",
       "ingredients": [
-        {"name": "Flour", "amount": "200 g"},
-        {"name": "Sugar", "amount": "100 g"},
-        {"name": "Butter", "amount": "200 g"},
-        {"name": "Chocolate Chips", "amount": "1 håndfuld"}
+        {"name": "Mel", "amount": "200 g"},
+        {"name": "Sukker", "amount": "100 g"},
+        {"name": "Smør", "amount": "200 g"},
+        {"name": "Chokolade knapper", "amount": "100g"}
       ],
       "procedure": "1. Preheat the oven to 200°C. 2. Mix the ingredients. 3. Bake for 15 minutes.",
       "quick_info": ["Bakes at 200°C", "15 minutes", "Yields 12 cookies"],
@@ -28,10 +28,10 @@
       "category": {"_id": "cat_2", "name": "Tærter"},
       "image_src": "raspberry_tart.jpg",
       "ingredients": [
-        {"name": "Flour", "amount": "100 g"},
-        {"name": "Butter", "amount": "100 g"},
-        {"name": "Raspberries", "amount": "1 bakke"},
-        {"name": "Honey", "amount": "2 spsk"}
+        {"name": "Mel", "amount": "100 g"},
+        {"name": "Smør", "amount": "100 g"},
+        {"name": "Hindbær", "amount": "1 bakke"},
+        {"name": "Honning", "amount": "2 spsk"}
       ],
       "procedure": "1. Prepare the dough. 2. Add raspberries. 3. Bake for 25 minutes at 180°C.",
       "quick_info": ["Bakes at 180°C", "25 minutes", "Serves 6"],
@@ -51,14 +51,14 @@
       "category": {"_id": "cat_3", "name": "Skærekager"},
       "image_src": "brownie.jpg",
       "ingredients": [
-        {"name": "Flour", "amount": "100 g"},
-        {"name": "Butter", "amount": "100 g"},
-        {"name": "Chocolate", "amount": "1 bakke"},
-        {"name": "Sugar", "amount": "2 spsk"},
-        {"name": "Eggs", "amount": "3"},
-        {"name": "Vanilla", "amount": "1 tsk"},
+        {"name": "Mel", "amount": "100 g"},
+        {"name": "Smør", "amount": "100 g"},
+        {"name": "Chokolade", "amount": "1 bakke"},
+        {"name": "Sukker", "amount": "2 spsk"},
+        {"name": "Æg", "amount": "3"},
+        {"name": "Vanilje", "amount": "1 tsk"},
         {"name": "Salt", "amount": "1 tsk"},
-        {"name": "Cocoa Powder", "amount": "3 spsk"}
+        {"name": "Kakaopulver", "amount": "3 spsk"}
       ],
       "procedure": "1. Mix the ingredients 2. Bake for 25 minutes at 180°C.",
       "quick_info": ["Bakes at 180°C", "25 minutes", "Serves 6"],
@@ -77,14 +77,14 @@
       "category": {"_id": "cat_2", "name": "Tærter"},
       "image_src": "applepie.jpg",
       "ingredients": [
-        {"name": "Flour", "amount": "100 g"},
-        {"name": "Lactosefree Butter", "amount": "100 g"},
+        {"name": "Mel", "amount": "100 g"},
+        {"name": "Lactosefri Smør", "amount": "100 g"},
         {"name": "Æbler", "amount": "3 stk"},
-        {"name": "Sugar", "amount": "2 spsk"},
-        {"name": "Eggs", "amount": "1"},
-        {"name": "Vanilla", "amount": "1 tsk"},
+        {"name": "Sukker", "amount": "2 spsk"},
+        {"name": "Æg", "amount": "1"},
+        {"name": "Vanilje", "amount": "1 tsk"},
         {"name": "Salt", "amount": "1 tsk"},
-        {"name": "Powdered sugar", "amount": "3 spsk"}
+        {"name": "Flormelis", "amount": "3 spsk"}
       ],
       "procedure": "1. Mix the ingredients for the dough  2. Line the dough in a tartpan 3. Mix diced apples with powdered sugar and add to tart 4. Bake for 25 minutes at 180°C.",
       "quick_info": ["Bakes at 180°C", "25 minutes", "Serves 6"],

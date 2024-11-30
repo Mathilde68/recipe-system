@@ -10,7 +10,7 @@ const NavBar = () => {
     <HStack justifyContent="space-between" padding={"0rem 1rem"} bg={"rosebrown.500"} color={"palecream.500"}>
        <HStack> 
         <ChakraLink as={ReactRouterLink} to='/'>
-        <MdBakeryDining size={"4rem"} color="#DFA985" /> 
+        <MdBakeryDining size={"4rem"} color="#F0B690" /> 
         </ChakraLink>
        <Heading size="md">Thilde's recipe collection</Heading>
        </HStack>
