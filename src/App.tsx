@@ -4,29 +4,27 @@ import * as React from "react";
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import RecipeList from "./components/RecipeList";
+
+
+
 import RecipeDetails from "./components/RecipeDetails";
-import Layout from "./components/Layout";
-import { Heading } from "@chakra-ui/react";
+import HomeLayout from "./layouts/HomeLayout";
+import DefaultLayout from "./layouts/DefaultLayout";
+
 
 
 
 const router = createBrowserRouter([
   {
-    path: "/",   // Root path, using Layout as the shared component
-    element: <Layout />,  
+    path: "/", // Root path for the homepage
+    element: <HomeLayout />,  // Use HomeLayout for the home page
+  },
+  {
+    path: "/recipe/:id", // Path for recipe details
+    element: <DefaultLayout />,  // Use DefaultLayout for other pages
     children: [
       {
-        path: "/",    // Home page
-        element: 
-        <>
-        <Heading>Cakes & Sweets recipe collection</Heading>
-        <RecipeList />
-        </>
-        
-      },
-      {
-        path: "recipe/:id",   // Recipe details page
+        index: true, // Recipe details page
         element: <RecipeDetails />,
       },
     ],
