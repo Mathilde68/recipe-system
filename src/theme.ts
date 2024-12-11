@@ -1,6 +1,7 @@
-import { CardBody, extendTheme, type ThemeConfig } from "@chakra-ui/react";
+import { Badge, baseTheme, ButtonGroup, CardBody, extendTheme, type ThemeConfig } from "@chakra-ui/react";
 import type { StyleFunctionProps } from '@chakra-ui/styled-system'
 import { mode } from "@chakra-ui/theme-tools";
+import { px } from "framer-motion";
 
 
 const config: ThemeConfig = {
@@ -55,7 +56,7 @@ const theme = extendTheme({
       100: '#C5AEAC',
       200: '#B09997',
       300: '#9B8481',
-      400: '#866F6C',
+      400: '#6E4745',
       500: '#593837',   // Base color
       600: '#4E3130',
       700: '#432A29',
@@ -114,9 +115,39 @@ const theme = extendTheme({
       baseStyle: (props: any) => ({
         color: props.colorMode === "dark" ? "palecream.500" : "darkbrown.500", //Overring text color on component level to make it work
       })
+    },
+    Badge: {
+      baseStyle: (props: any) => ({
+        bg: "#2C3245",
+        color: "creamwhite.500",
+        textTransform: 'capitalize',
+        fontWeight: "bold",
+        px: 3,
+        py: 1.5,
+        borderRadius: "8px",
+  }),
+  variants: {
+    // Define specific variants if needed
+    pink: {
+      bg: "#CB8B9F",
+    },
+    brown: {
+      bg: "rosebrown.400",
+    },
+    yellow: {
+      bg: "#D4A547",
+    },
+    green: {
+      bg: "#8C947A",
+    },
+    creme: {
+      bg: "#FFE4BA",
+      color: "rosebrown.500",
     }
+
   },
- 
+},
+}
 });
 
 

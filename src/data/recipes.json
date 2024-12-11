@@ -1,7 +1,7 @@
 [
     {
       "_id": "1",
-      "title": "Chocolate Chip Cookies",
+      "title": "Chokolade Chip Cookies",
       "category": {"_id": "cat_1", "name": "Cookies"},
       "image_src": "cookie.jpg",
       "ingredients": [
@@ -13,8 +13,8 @@
       "procedure": "1. Preheat the oven to 200°C. 2. Mix the ingredients. 3. Bake for 15 minutes.",
       "quick_info": ["Bakes at 200°C", "15 minutes", "Yields 12 cookies"],
       "ingredient_tags": [
-        {"_id": "tag_chocolate", "name": "Chocolate"},
-        {"_id": "tag_butter", "name": "Butter"}
+        {"_id": "tag_chokolade", "name": "Chokolade"},
+        {"_id": "tag_smør", "name": "Smør"}
       ],
       "diet_type_tags": [
         {"_id": "tag_vegan", "name": "Vegan"}
@@ -36,11 +36,10 @@
       "procedure": "1. Prepare the dough. 2. Add raspberries. 3. Bake for 25 minutes at 180°C.",
       "quick_info": ["Bakes at 180°C", "25 minutes", "Serves 6"],
       "ingredient_tags": [
-        {"_id": "tag_raspberry", "name": "Raspberry"},
-        {"_id": "tag_butter", "name": "Butter"}
+        {"_id": "tag_hindbær", "name": "Hindbær"},
+        {"_id": "tag_smør", "name": "Smør"}
       ],
       "diet_type_tags": [
-        {"_id": "tag_no_added_sugar", "name": "No added sugar"}
       ],
       "created_at": "2024-09-21T10:30:00Z",
       "last_edited_at": "2024-09-21T11:00:00Z"
@@ -63,8 +62,8 @@
       "procedure": "1. Mix the ingredients 2. Bake for 25 minutes at 180°C.",
       "quick_info": ["Bakes at 180°C", "25 minutes", "Serves 6"],
       "ingredient_tags": [
-        {"_id": "tag_chocolate", "name": "Chocolate"},
-        {"_id": "tag_butter", "name": "Butter"}
+        {"_id": "tag_chokolade", "name": "Chokolade"},
+        {"_id": "tag_smør", "name": "Smør"}
       ],
       "diet_type_tags": [
       ],
@@ -86,14 +85,15 @@
         {"name": "Salt", "amount": "1 tsk"},
         {"name": "Flormelis", "amount": "3 spsk"}
       ],
-      "procedure": "1. Mix the ingredients for the dough  2. Line the dough in a tartpan 3. Mix diced apples with powdered sugar and add to tart 4. Bake for 25 minutes at 180°C.",
+      "procedure": "1. Mix the ingredients for the dough  2. Line the dough in a tartpan 3. Mix diced æbles with powdered sugar and add to tart 4. Bake for 25 minutes at 180°C.",
       "quick_info": ["Bakes at 180°C", "25 minutes", "Serves 6"],
       "ingredient_tags": [
-        {"_id": "tag_apple", "name": "Apple"},
-        {"_id": "tag_butter", "name": "Butter"}
+        {"_id": "tag_æble", "name": "Æble"},
+        {"_id": "tag_smør", "name": "Smør"},
+        {"_id": "tag_citron", "name": "Citron"}
       ],
       "diet_type_tags": [
-        {"_id": "tag_lactose", "name": "Lactose free"}
+        {"_id": "tag_lactose", "name": "Laktose fri"}
       ],
       "created_at": "2024-09-21T10:30:00Z",
       "last_edited_at": "2024-09-21T11:00:00Z"

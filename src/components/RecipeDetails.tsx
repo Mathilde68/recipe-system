@@ -41,7 +41,7 @@ const RecipeDetails = () => {
     >
       <Image
         src={img_url}
-        alt="Chocolate Cake"
+        alt="Chokolade Cake"
         borderTopRadius="2xl"
         objectFit="cover"
         boxSize="100%"
@@ -73,7 +73,7 @@ const RecipeDetails = () => {
           </VStack>
         </Box>
 
-        <Stack height="500px">
+        <Stack height="450px">
           <Divider orientation="vertical"  borderWidth="1px" opacity="0.9" borderColor={colorMode === "dark" ? "peachbrown.500" : "rosebrown.500"} />
         </Stack>
 

@@ -9,14 +9,16 @@ interface Props {
 
   const getColor = (name: string) => {
     switch (name) {
-      case "Chocolate":
-        return "orange";
-      case "Butter":
-        return "yellow";
-      case "Apple":
+      case "Chokolade":
+        return "brown";
+      case "Smør":
+        return "creme";
+      case "Æble":
         return "green";
-      case "Raspberry":
+      case "Hindbær":
         return "pink";
+      case "Citron":
+        return "yellow";
     }
   };
   
@@ -24,7 +26,7 @@ interface Props {
 
     
     return (
-      <Badge colorScheme={getColor(tag.name)}>
+      <Badge variant={getColor(tag.name)}>
         {tag.name}
       </Badge>
     );
