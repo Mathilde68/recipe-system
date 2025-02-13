@@ -1,0 +1,62 @@
+[
+  {
+    "_id": 1,
+    "name": "Tærte"
+  },
+  {
+    "_id": 2,
+    "name": "Cookies"
+  },
+  {
+    "_id": 3,
+    "name": "Småkager"
+  },
+  {
+    "_id": 4,
+    "name": "Dessert"
+  },
+  {
+    "_id": 5,
+    "name": "Skærekage"
+  },
+  {
+    "_id": 6,
+    "name": "Muffins & Cupcakes"
+  },
+  {
+    "_id": 7,
+    "name": "Cheesecake"
+  },
+  {
+    "_id": 8,
+    "name": "Moussekager"
+  },
+  {
+    "_id": 9,
+    "name": "Flødekager"
+  },
+  {
+    "_id": 10,
+    "name": "Smørcreme kager"
+  },
+  {
+    "_id": 11,
+    "name": "Wienerbrød"
+  },
+  {
+    "_id": 12,
+    "name": "Bløddej"
+  },
+  {
+    "_id": 13,
+    "name": "Tørkager"
+  },
+  {
+    "_id": 14,
+    "name": "Konfekt & Petit Fours"
+  },
+  {
+    "_id": 15,
+    "name": "Andet"
+  }
+]

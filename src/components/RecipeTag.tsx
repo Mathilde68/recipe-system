@@ -11,7 +11,7 @@ interface Props {
     switch (name) {
       case "Chokolade":
         return "brown";
-      case "Smør":
+      case "Mandler":
         return "creme";
       case "Æble":
         return "green";
@@ -19,6 +19,8 @@ interface Props {
         return "pink";
       case "Citron":
         return "yellow";
+      case "Banan":
+          return "yellow";
     }
   };
   

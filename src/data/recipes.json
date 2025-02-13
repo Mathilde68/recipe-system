@@ -1,102 +1,637 @@
 [
-    {
-      "_id": "1",
-      "title": "Chokolade Chip Cookies",
-      "category": {"_id": "cat_1", "name": "Cookies"},
-      "image_src": "cookie.jpg",
-      "ingredients": [
-        {"name": "Mel", "amount": "200 g"},
-        {"name": "Sukker", "amount": "100 g"},
-        {"name": "Smør", "amount": "200 g"},
-        {"name": "Chokolade knapper", "amount": "100g"}
-      ],
-      "procedure": "1. Preheat the oven to 200°C. 2. Mix the ingredients. 3. Bake for 15 minutes.",
-      "quick_info": ["Bakes at 200°C", "15 minutes", "Yields 12 cookies"],
-      "ingredient_tags": [
-        {"_id": "tag_chokolade", "name": "Chokolade"},
-        {"_id": "tag_smør", "name": "Smør"}
-      ],
-      "diet_type_tags": [
-        {"_id": "tag_vegan", "name": "Vegan"}
-      ],
-      "created_at": "2024-09-22T12:00:00Z",
-      "last_edited_at": "2024-09-22T12:00:00Z"
+  {
+    "_id": "1",
+    "title": "Chokolade Chip Cookies",
+    "category": {
+      "_id": 2,
+      "name": "Cookies"
     },
-    {
-      "_id": "2",
-      "title": "Hindbær Mini-tærter",
-      "category": {"_id": "cat_2", "name": "Tærter"},
-      "image_src": "raspberry_tart.jpg",
-      "ingredients": [
-        {"name": "Mel", "amount": "100 g"},
-        {"name": "Smør", "amount": "100 g"},
-        {"name": "Hindbær", "amount": "1 bakke"},
-        {"name": "Honning", "amount": "2 spsk"}
-      ],
-      "procedure": "1. Prepare the dough. 2. Add raspberries. 3. Bake for 25 minutes at 180°C.",
-      "quick_info": ["Bakes at 180°C", "25 minutes", "Serves 6"],
-      "ingredient_tags": [
-        {"_id": "tag_hindbær", "name": "Hindbær"},
-        {"_id": "tag_smør", "name": "Smør"}
-      ],
-      "diet_type_tags": [
-      ],
-      "created_at": "2024-09-21T10:30:00Z",
-      "last_edited_at": "2024-09-21T11:00:00Z"
+    "image_src": "cookie.jpg",
+    "ingredient_groups": [
+      {
+        "name": "Cookies",
+        "ingredients": [
+          {
+            "name": "Mel",
+            "amount": "200 g"
+          },
+          {
+            "name": "Sukker",
+            "amount": "100 g"
+          },
+          {
+            "name": "Smør",
+            "amount": "200 g"
+          },
+          {
+            "name": "Chokolade knapper",
+            "amount": "100g"
+          }
+        ]
+      }
+    ],
+    "procedure_steps": [
+      {
+        "name": "Cookies",
+        "steps": [
+          "Forvarm ovnen til 200°C.",
+          "Pisk smør og æg sammen.",
+          "Miks alle tørre ingredienser sammen",
+          "Vend sammen til ensartet dej",
+          "Form til 12 store kugler og bag for 15 minutes."
+        ]
+      }
+    ],
+    "quick_info": [
+      "Bages ved 200°C",
+      "15 min",
+      "Ca. 12 stk"
+    ],
+    "ingredient_tags": [
+      {
+        "_id": 5,
+        "name": "Chokolade"
+      }
+    ],
+    "diet_type_tags": [
+      {
+        "_id": 2,
+        "name": "Vegan"
+      }
+    ],
+    "created_at": "2024-09-22T12:00:00Z",
+    "last_edited_at": "2024-09-22T12:00:00Z"
+  },
+  {
+    "_id": "2",
+    "title": "Hindbær Mini-tærter",
+    "category": {
+      "_id": 1,
+      "name": "Tærter"
     },
-    {
-      "_id": "3",
-      "title": "Brownies",
-      "category": {"_id": "cat_3", "name": "Skærekager"},
-      "image_src": "brownie.jpg",
-      "ingredients": [
-        {"name": "Mel", "amount": "100 g"},
-        {"name": "Smør", "amount": "100 g"},
-        {"name": "Chokolade", "amount": "1 bakke"},
-        {"name": "Sukker", "amount": "2 spsk"},
-        {"name": "Æg", "amount": "3"},
-        {"name": "Vanilje", "amount": "1 tsk"},
-        {"name": "Salt", "amount": "1 tsk"},
-        {"name": "Kakaopulver", "amount": "3 spsk"}
-      ],
-      "procedure": "1. Mix the ingredients 2. Bake for 25 minutes at 180°C.",
-      "quick_info": ["Bakes at 180°C", "25 minutes", "Serves 6"],
-      "ingredient_tags": [
-        {"_id": "tag_chokolade", "name": "Chokolade"},
-        {"_id": "tag_smør", "name": "Smør"}
-      ],
-      "diet_type_tags": [
-      ],
-      "created_at": "2024-09-21T10:30:00Z",
-      "last_edited_at": "2024-09-21T11:00:00Z"
+    "image_src": "raspberry_tart.jpg",
+    "ingredient_groups": [
+      {
+        "name": "Tærtebund",
+        "ingredients": [
+          { "name": "Hvedemel", "amount": "200 g" },
+          { "name": "Smør", "amount": "100 g" },
+          { "name": "Sukker", "amount": "50 g" },
+          { "name": "Æg", "amount": "1 stk" },
+          { "name": "Salt", "amount": "1 knivspids" }
+        ]
+      },
+      {
+        "name": "Mazarin",
+        "ingredients": [
+          { "name": "Marcipan", "amount": "150 g" },
+          { "name": "Smør", "amount": "100 g" },
+          { "name": "Sukker", "amount": "100 g" },
+          { "name": "Æg", "amount": "2 stk" },
+          { "name": "Mandelmel", "amount": "50 g" }
+        ]
+      },
+      {
+        "name": "Marengs",
+        "ingredients": [
+          { "name": "Æggehvider", "amount": "3 stk" },
+          { "name": "Sukker", "amount": "150 g" },
+          { "name": "Vaniljeekstrakt", "amount": "1 tsk" }
+        ]
+      },
+      {
+        "name": "Topping",
+        "ingredients": [
+          { "name": "Hindbær", "amount": "2 bakker" },
+          { "name": "Flormelis", "amount": "2 spsk" }
+        ]
+      }
+    ],
+    "procedure_steps": [
+      {
+        "name": "Tærtebund",
+        "steps": [
+          "Bland mel, smør, sukker og salt til en smulret konsistens.",
+          "Tilsæt æg og ælt dejen sammen.",
+          "Rul dejen ud og fordel den i tartelettforme.",
+          "Bag ved 180°C i 10-12 minutter."
+        ]
+      },
+      {
+        "name": "Mazarin",
+        "steps": [
+          "Bland marcipan, smør og sukker til en cremet masse.",
+          "Tilsæt æg og mandelmel, og rør godt.",
+          "Fordel mazarinmassen i de bagte tærtebund.",
+          "Bag ved 180°C i 15-20 minutter."
+        ]
+      },
+      {
+        "name": "Marengs",
+        "steps": [
+          "Pisk æggehvider stive og tilsæt sukker lidt ad gangen.",
+          "Tilsæt vaniljeekstrakt og pisk til en stiv marengs.",
+          "Sprøjt marengs på de afkølede tærter.",
+          "Brænd marengsen let med en brænder."
+        ]
+      },
+      {
+        "name": "Topping",
+        "steps": [
+          "Fordel friske hindbær på tærterne.",
+          "Drys med flormelis før servering."
+        ]
+      }
+    ],
+    "quick_info": [
+      "Bages ved 180°C",
+      "15-20 minutter",
+      "Med hindbær og marengs"
+    ],
+    "ingredient_tags": [
+      { "_id": 13, "name": "Hindbær" },
+      { "_id": 24, "name": "Marcipan" }
+    ],
+    "diet_type_tags": [],
+    "created_at": "2024-09-21T10:30:00Z",
+    "last_edited_at": "2024-09-21T11:00:00Z"
+  },
+  {
+    "_id": "3",
+    "title": "Brownies",
+    "category": {
+      "_id": 5,
+      "name": "Skærekager"
     },
-    {
-      "_id": "4",
-      "title": "Æble tærte",
-      "category": {"_id": "cat_2", "name": "Tærter"},
-      "image_src": "applepie.jpg",
-      "ingredients": [
-        {"name": "Mel", "amount": "100 g"},
-        {"name": "Lactosefri Smør", "amount": "100 g"},
-        {"name": "Æbler", "amount": "3 stk"},
-        {"name": "Sukker", "amount": "2 spsk"},
-        {"name": "Æg", "amount": "1"},
-        {"name": "Vanilje", "amount": "1 tsk"},
-        {"name": "Salt", "amount": "1 tsk"},
-        {"name": "Flormelis", "amount": "3 spsk"}
-      ],
-      "procedure": "1. Mix the ingredients for the dough  2. Line the dough in a tartpan 3. Mix diced æbles with powdered sugar and add to tart 4. Bake for 25 minutes at 180°C.",
-      "quick_info": ["Bakes at 180°C", "25 minutes", "Serves 6"],
-      "ingredient_tags": [
-        {"_id": "tag_æble", "name": "Æble"},
-        {"_id": "tag_smør", "name": "Smør"},
-        {"_id": "tag_citron", "name": "Citron"}
-      ],
-      "diet_type_tags": [
-        {"_id": "tag_lactose", "name": "Laktose fri"}
-      ],
-      "created_at": "2024-09-21T10:30:00Z",
-      "last_edited_at": "2024-09-21T11:00:00Z"
-    }
-
-  ]
+    "image_src": "brownie.jpg",
+    "ingredient_groups": [
+      {
+        "name": "Ingredienser",
+        "ingredients": [
+          {
+            "name": "Mel",
+            "amount": "100 g"
+          },
+          {
+            "name": "Smør",
+            "amount": "100 g"
+          },
+          {
+            "name": "Chokolade",
+            "amount": "1 bakke"
+          },
+          {
+            "name": "Sukker",
+            "amount": "2 spsk"
+          },
+          {
+            "name": "Æg",
+            "amount": "3"
+          },
+          {
+            "name": "Vanilje",
+            "amount": "1 tsk"
+          },
+          {
+            "name": "Salt",
+            "amount": "1 tsk"
+          },
+          {
+            "name": "Kakaopulver",
+            "amount": "3 spsk"
+          }
+        ]
+      }
+    ],
+    "procedure_steps": [
+      {
+        "name": "Brownies",
+        "steps": [
+          "Mix the ingredients.",
+          "Bake for 25 minutes at 180°C."
+        ]
+      }
+    ],
+    "quick_info": [
+      "Bakes at 180°C",
+      "25 minutes",
+      "Serves 6"
+    ],
+    "ingredient_tags": [
+      {
+        "_id": 5,
+        "name": "Chokolade"
+      }
+    ],
+    "diet_type_tags": [],
+    "created_at": "2024-09-21T10:30:00Z",
+    "last_edited_at": "2024-09-21T11:00:00Z"
+  },
+  {
+    "_id": "4",
+    "title": "Æble tærte",
+    "category": {
+      "_id": 1,
+      "name": "Tærter"
+    },
+    "image_src": "applepie.jpg",
+    "ingredient_groups": [
+      {
+        "name": "Ingredienser",
+        "ingredients": [
+          {
+            "name": "Mel",
+            "amount": "100 g"
+          },
+          {
+            "name": "Lactosefri Smør",
+            "amount": "100 g"
+          },
+          {
+            "name": "Æbler",
+            "amount": "3 stk"
+          },
+          {
+            "name": "Sukker",
+            "amount": "2 spsk"
+          },
+          {
+            "name": "Æg",
+            "amount": "1"
+          },
+          {
+            "name": "Vanilje",
+            "amount": "1 tsk"
+          },
+          {
+            "name": "Salt",
+            "amount": "1 tsk"
+          },
+          {
+            "name": "Flormelis",
+            "amount": "3 spsk"
+          },
+          {
+            "name": "Citron",
+            "amount": "Skallen af 1"
+          },
+          {
+            "name": "Mandelflager",
+            "amount": "20g"
+          }
+        ]
+      }
+    ],
+    "procedure_steps": [
+      {
+        "name": "Tærte",
+        "steps": [
+          "Mix the ingredients for the dough.",
+          "Line the dough in a tartpan.",
+          "Mix diced æbles with powdered sugar and add to tart.",
+          "Bake for 25 minutes at 180°C."
+        ]
+      }
+    ],
+    "quick_info": [
+      "Bakes at 180°C",
+      "25 minutes",
+      "Serves 6"
+    ],
+    "ingredient_tags": [
+      {
+        "_id": 40,
+        "name": "Æble"
+      },
+      {
+        "_id": 6,
+        "name": "Citron"
+      },
+      {
+        "_id": 23,
+        "name": "Mandler"
+      }
+    ],
+    "diet_type_tags": [
+      {
+        "_id": 1,
+        "name": "Laktose fri"
+      }
+    ],
+    "created_at": "2024-09-21T10:30:00Z",
+    "last_edited_at": "2024-09-21T11:00:00Z"
+  },
+  {
+    "_id": "5",
+    "title": "Bananpandekager",
+    "category": {
+      "_id": 15,
+      "name": "Andet"
+    },
+    "image_src": "bananpandekager.jpg",
+    "ingredient_groups": [
+      {
+        "name": "Ingredienser",
+        "ingredients": [
+          {
+            "name": "Bananer",
+            "amount": "3 stk"
+          },
+          {
+            "name": "Æg",
+            "amount": "3"
+          },
+          {
+            "name": "Havregryn",
+            "amount": "1 dl"
+          },
+          {
+            "name": "Hvedemel",
+            "amount": "1 dl"
+          },
+          {
+            "name": "Bagepulver",
+            "amount": "1 tsk"
+          },
+          {
+            "name": "Salt",
+            "amount": "1/2 teskefuld"
+          }
+        ]
+      }
+    ],
+    "procedure_steps": [
+      {
+        "name": "Pandekager",
+        "steps": [
+          "Mos bananer let.",
+          "Pisk op sammen med æg.",
+          "Bland og vend de tørre ingredienser i.",
+          "Steg pandekagerne og husk at vende dem først, når de hæver og bobler på overfladen."
+        ]
+      }
+    ],
+    "quick_info": [
+      "Uden sukker",
+      "Ca. 10 stk"
+    ],
+    "ingredient_tags": [
+      {
+        "_id": 2,
+        "name": "Banan"
+      }
+    ],
+    "diet_type_tags": [
+      {
+        "_id": 3,
+        "name": "Uden sukker"
+      }
+    ],
+    "created_at": "2024-02-12T10:30:00Z",
+    "last_edited_at": "2024-02-12T11:00:00Z"
+  },
+  {
+    "_id": "6",
+    "title": "Sarah Bernhardt",
+    "category": {
+      "_id": 13,
+      "name": "Tørkager"
+    },
+    "image_src": "sarah_bernhardt.jpg",
+    "ingredient_groups": [
+      {
+        "name": "Makronbunde",
+        "ingredients": [
+          { "name": "Marcipan", "amount": "100 g" },
+          { "name": "Sukker", "amount": "150 g" },
+          { "name": "Blendede mandler", "amount": "25 g" },
+          { "name": "Æggehvider", "amount": "ca. 2 stk" }
+        ]
+      },
+      {
+        "name": "Chokoladecreme",
+        "ingredients": [
+          { "name": "Fløde", "amount": "5 dl" },
+          { "name": "Mørk chokolade", "amount": "220 g" }
+        ]
+      },
+      {
+        "name": "Chokoladeovertræk",
+        "ingredients": [
+          { "name": "Mørk chokolade", "amount": "120 g" }
+        ]
+      }
+    ],
+    "procedure_steps": [
+      {
+        "name": "Makronbunde",
+        "steps": [
+          "Pisk marcipan, sukker, mandler og æggehvider til en glat masse.",
+          "Form små bunde på en bageplade.",
+          "Bag ved 175°C i 15 minutter."
+        ]
+      },
+      {
+        "name": "Chokoladecreme",
+        "steps": [
+          "Kog fløden og hæld den over hakket chokolade.",
+          "Rør, indtil chokoladen er smeltet, og lad cremen køle natten over.",
+          "Pisk cremen stiv."
+        ]
+      },
+      {
+        "name": "Samling",
+        "steps": [
+          "Smør chokoladecreme på makronbundene.",
+          "Dyp hver kage i smeltet chokolade.",
+          "Lad kagerne stivne i køleskabet."
+        ]
+      }
+    ],
+    "quick_info": [
+      "Køl natten over",
+      "175°C i 15 min"
+    ],
+    "ingredient_tags": [
+      { "_id": 5, "name": "Chokolade" },
+      { "_id": 24, "name": "Marcipan" }
+    ],
+    "diet_type_tags": [],
+    "created_at": "2024-02-12T12:00:00Z",
+    "last_edited_at": "2024-02-12T12:30:00Z"
+  },
+  {
+    "_id": "7",
+    "title": "Chokoladebjørn Cream Puffs",
+    "category": {
+      "_id": 9,
+      "name": "Flødekager"
+    },
+    "image_src": "cream_puff.jpg",
+    "ingredient_groups": [
+      {
+        "name": "Choux Dej",
+        "ingredients": [
+          { "name": "Vand", "amount": "125 ml" },
+          { "name": "Smør", "amount": "50 g" },
+          { "name": "Hvedemel", "amount": "75 g" },
+          { "name": "Æg", "amount": "2 stk" },
+          { "name": "Salt", "amount": "1 knivspids" }
+        ]
+      },
+      {
+        "name": "Craquelin",
+        "ingredients": [
+          { "name": "Smør", "amount": "50 g" },
+          { "name": "Brun farin", "amount": "50 g" },
+          { "name": "Hvedemel", "amount": "60 g" }
+        ]
+      },
+      {
+        "name": "Chokoladecreme",
+        "ingredients": [
+          { "name": "Fløde", "amount": "2.5 dl" },
+          { "name": "Mørk chokolade", "amount": "200 g" },
+          { "name": "Æggeblomme", "amount": "2 stk" },
+          { "name": "Sukker", "amount": "50 g" },
+          { "name": "Vaniljeekstrakt", "amount": "1 tsk" }
+        ]
+      }
+    ],
+    "procedure_steps": [
+      {
+        "name": "Choux Dej",
+        "steps": [
+          "Kog vand, smør og salt i en gryde.",
+          "Tilsæt mel og rør kraftigt, indtil dejen løsner sig fra gryden.",
+          "Tag gryden af varmen og tilsæt æg ét ad gangen, mens du rør godt.",
+          "Sprøjt eller form dejen i små boller på en bageplade.",
+          "Bag ved 200°C i 20-25 minutter, indtil de er gyldne og hule."
+        ]
+      },
+      {
+        "name": "Craquelin",
+        "steps": [
+          "Bland smør, farin og mel til en ensartet dej.",
+          "Rul dejen ud mellem to stykker bagepapir til en tynd skive.",
+          "Skær cirkler ud, der passer til choux-dejen.",
+          "Læg craquelin-skiverne oven på choux-dejen før bagning."
+        ]
+      },
+      {
+        "name": "Chokoladecreme",
+        "steps": [
+          "Varm fløden op i en gryde, men kog den ikke.",
+          "Hæld den varme fløde over hakket chokolade og rør, indtil chokoladen er smeltet.",
+          "Pisk æggeblommer og sukker lyst, og tilsæt den varme chokoladeblanding.",
+          "Kog cremen under omrøring, indtil den tykner.",
+          "Afkøl cremen og fyld den i choux-bollerne."
+        ]
+      }
+    ],
+    "quick_info": [
+      "Bages ved 200°C",
+      "20-25 minutter",
+      "Fyldt med chokoladecreme"
+    ],
+    "ingredient_tags": [
+      { "_id": 5, "name": "Chokolade" }
+    ],
+    "diet_type_tags": [],
+    "created_at": "2024-02-12T12:00:00Z",
+    "last_edited_at": "2024-02-12T12:30:00Z"
+  },
+  {
+    "_id": "8",
+    "title": "Hindbær Spandauer",
+    "category": {
+      "_id": 11,
+      "name": "Wienerbrød"
+    },
+    "image_src": "spandauer.jpg",
+    "ingredient_groups": [
+      {
+        "name": "Dej",
+        "ingredients": [
+          { "name": "Hvedemel", "amount": "500 g" },
+          { "name": "Mælk", "amount": "250 ml" },
+          { "name": "Gær", "amount": "50 g" },
+          { "name": "Sukker", "amount": "75 g" },
+          { "name": "Smør", "amount": "250 g" },
+          { "name": "Æg", "amount": "1 stk" },
+          { "name": "Salt", "amount": "1 tsk" }
+        ]
+      },
+      {
+        "name": "Marcipan Remonce",
+        "ingredients": [
+          { "name": "Marcipan", "amount": "100 g" },
+          { "name": "Smør", "amount": "100 g" },
+          { "name": "Sukker", "amount": "100 g" }
+        ]
+      },
+      {
+        "name": "Fyld",
+        "ingredients": [
+          { "name": "Hindbærsylt", "amount": "200 g" }
+        ]
+      },
+      {
+        "name": "Glasur",
+        "ingredients": [
+          { "name": "Flormelis", "amount": "100 g" },
+          { "name": "Vand", "amount": "1-2 spsk" }
+        ]
+      }
+    ],
+    "procedure_steps": [
+      {
+        "name": "Dej",
+        "steps": [
+          "Bland mel, mælk, gær, sukker, æg og salt i en skål og ælt til en smidig dej.",
+          "Fold det kolde smør ind i dejen ved at folde dejens kanter ind mod midten.",
+          "Rul og fold dejen i 3 omgange i et 3X3 fold. Du ender med 27 lag",
+          "Lad dejen hvile i køleskabet i mindst 1 time."
+        ]
+      },
+      {
+        "name": "Marcipan Remonce",
+        "steps": [
+          "Bland marcipan, smør og flormelis til en cremet remonce.",
+          "Lad remoncen hvile i køleskabet, indtil den er klar til brug."
+        ]
+      },
+      {
+        "name": "Formning og Bagning",
+        "steps": [
+          "Rul dejen ud til en firkant på ca. 0,5 cm tykkelse.",
+          "Skær dejen i mindre firkanter (ca. 10x10 cm).",
+          "Fordel en klat marcipan remonce i midten af hver firkant.",
+          "Tilføj en teskefuld hindbærsylt ovenpå remoncen.",
+          "Fold hjørnerne af dejen ind mod midten og pres dem let sammen.",
+          "Lad spandauerne hæve i 30 minutter ved stuetemperatur.",
+          "Bag ved 200°C i 15-20 minutter, indtil de er gyldenbrune."
+        ]
+      },
+      {
+        "name": "Glasur",
+        "steps": [
+          "Bland flormelis og vand til en glat glasur.",
+          "Pensl glasuren over de varme spandauer."
+        ]
+      }
+    ],
+    "quick_info": [
+      "Bages ved 200°C",
+      "15-20 minutter",
+      "Giver 12 stk"
+    ],
+    "ingredient_tags": [
+      { "_id": 24, "name": "Marcipan" },
+      { "_id": 13, "name": "Hindbær" }
+    ],
+    "diet_type_tags": [],
+    "created_at": "2024-09-22T12:00:00Z",
+    "last_edited_at": "2024-09-22T12:00:00Z"
+  }
+]

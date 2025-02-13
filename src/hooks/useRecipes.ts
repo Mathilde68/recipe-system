@@ -1,9 +1,8 @@
-import { useEffect, useState } from 'react';
-import { fetchRecipes } from '../services/recipeService';
+import useData from './useData';
+import { fetchRecipes } from '../services/dataService';
 
-// Defining the structure of my recipe data using interfaces
 interface Category {
-  _id: string;
+  _id: number;
   name: string;
 }
 
@@ -12,18 +11,28 @@ interface Ingredient {
   amount: string;
 }
 
+interface IngredientGroup {
+  name: string;
+  ingredients: Ingredient[];
+}
+
+interface ProcedureStep {
+  name: string;
+  steps: string[];
+}
+
 export interface Tag {
-    _id: string;
-    name: string;
-  }
+  _id: number;
+  name: string;
+}
 
 export interface Recipe {
   _id: string;
   title: string;
   category: Category;
   image_src: string;
-  ingredients: Ingredient[];
-  procedure: string;
+  ingredient_groups: IngredientGroup[];
+  procedure_steps: ProcedureStep[];
   quick_info: string[];
   ingredient_tags: Tag[];
   diet_type_tags: Tag[];
@@ -32,13 +41,7 @@ export interface Recipe {
 }
 
 const useRecipes = () => {
-  const [recipes, setRecipes] = useState<Recipe[]>([]);
-
-  useEffect(() => {
-    fetchRecipes().then((data) => setRecipes(data));
-  }, []);
-
-  return recipes;
+  return useData<Recipe>(fetchRecipes);
 };
 
 export default useRecipes;

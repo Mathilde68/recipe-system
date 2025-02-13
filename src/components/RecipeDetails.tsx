@@ -9,7 +9,6 @@ import {
   Stack,
   Divider,
   VStack,
-  Center,
   Card,
   CardBody,
   useColorMode,
@@ -21,10 +20,10 @@ const RecipeDetails = () => {
   const { colorMode } = useColorMode();
 
   const { id } = useParams<{ id: string }>(); // Fetch the ID from the URL
-  const recipes = useRecipes(); // Fetch all recipes (can replace with an API call later)
+  const recipes = useRecipes(); // Fetch all recipes
 
   // Find the recipe by id
-  const recipe = recipes.find((recipe) => recipe._id === id); // Correctly compare id
+  const recipe = recipes.find((recipe) => recipe._id === id);
   if (!recipe) {
     return <Heading>Recipe not found</Heading>;
   }
@@ -41,7 +40,7 @@ const RecipeDetails = () => {
     >
       <Image
         src={img_url}
-        alt="Chokolade Cake"
+        alt={recipe.title}
         borderTopRadius="2xl"
         objectFit="cover"
         boxSize="100%"
@@ -64,22 +63,57 @@ const RecipeDetails = () => {
         </Heading>
       </Box>
       <Flex>
+
         <Box width="30%" px={8} height="500px">
           <Text fontWeight="bold">Ingredients</Text>
-          <VStack align="start" spacing={1} direction="row" h="500px" p={4} >
-            {recipe.ingredients.map((ingredients) => (
-            <Text color={colorMode === "dark" ? "peachbrown.500" : "rosebrown.500"} key={ingredients.name} >{ingredients.amount} {ingredients.name} </Text>
-      ))}
+          <VStack align="start" spacing={1} direction="row" h="500px" p={4}>
+            {recipe.ingredient_groups.map((group) => (
+              <Box key={group.name}>
+                <Text fontWeight="semibold" color={colorMode === "dark" ? "peachbrown.500" : "rosebrown.500"}>
+                  {group.name}
+                </Text>
+                {group.ingredients.map((ingredient) => (
+                  <Text
+                    key={ingredient.name}
+                    color={colorMode === "dark" ? "peachbrown.500" : "rosebrown.500"}
+                  >
+                    {ingredient.amount} {ingredient.name}
+                  </Text>
+                ))}
+              </Box>
+            ))}
           </VStack>
         </Box>
 
+  
         <Stack height="450px">
-          <Divider orientation="vertical"  borderWidth="1px" opacity="0.9" borderColor={colorMode === "dark" ? "peachbrown.500" : "rosebrown.500"} />
+          <Divider
+            orientation="vertical"
+            borderWidth="1px"
+            opacity="0.9"
+            borderColor={colorMode === "dark" ? "peachbrown.500" : "rosebrown.500"}
+          />
         </Stack>
 
+      
         <Box width="70%" p={4}>
-          <Text fontWeight="bold">Fremgangsmåde</Text>
-          <Text>{recipe.procedure}</Text>
+          <Text fontSize="xl" fontWeight="bold">Fremgangsmåde</Text>
+          <VStack align="start" spacing={4}>
+            {recipe.procedure_steps.map((step) => (
+              <Box key={step.name}>
+                <Text fontWeight="semibold" color={colorMode === "dark" ? "peachbrown.500" : "rosebrown.500"}>
+                  {step.name}
+                </Text>
+                <VStack align="start" spacing={2}>
+                  {step.steps.map((step) => (
+                    <Text color={colorMode === "dark" ? "peachbrown.500" : "rosebrown.500"}>
+                      {step}
+                    </Text>
+                  ))}
+                </VStack>
+              </Box>
+            ))}
+          </VStack>
         </Box>
       </Flex>
     </Card>

@@ -1,0 +1,7 @@
+{
+  "diet_tags": [
+    {"_id": 1, "name": "Laktosefri"},
+    {"_id": 2, "name": "Vegan"},
+    {"_id": 3, "name": "Uden sukker"}
+  ]
+}
