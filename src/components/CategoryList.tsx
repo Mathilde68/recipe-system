@@ -25,14 +25,15 @@ const CategoryList = ({ onSelectCategory }: CategoryListProps) => {
         textAlign={"left"}
         bg={"transparent"}
         borderRadius={0}
-        height={"2.2rem"}
-        _focus={{ bg: colorMode === "dark" ? "rosebrown.600" : "rosebrown.100" }}
+        height={"2rem"}
         fontWeight={500}
+        fontSize={"m"}
         width={"100%"}
+        _focus={{ bg: colorMode === "dark" ? "rosebrown.600" : "rosebrown.100" }}
         _hover={{ bg: colorMode === "dark" ? "rosebrown.600" : "rosebrown.100" }}
         onClick={() => onSelectCategory(null)}
       >
-        All
+        Alle
       </Button>
 
       {categories.map((category: Category) => (
@@ -42,10 +43,11 @@ const CategoryList = ({ onSelectCategory }: CategoryListProps) => {
           textAlign={"left"}
           bg={"transparent"}
           borderRadius={0}
-          height={"2.2rem"}
-          _focus={{ bg: colorMode === "dark" ? "rosebrown.600" : "rosebrown.100" }}
+          height={"2rem"}
           fontWeight={500}
+          
           width={"100%"}
+          _focus={{ bg: colorMode === "dark" ? "rosebrown.600" : "rosebrown.100" }}
           _hover={{ bg: colorMode === "dark" ? "rosebrown.600" : "rosebrown.100" }}
           key={category._id}
           onClick={() => onSelectCategory(category._id)}

@@ -9,8 +9,7 @@ import {
   MenuList,
   MenuItem,
   Button,
-  Input,
-  border
+  Input
 } from "@chakra-ui/react";
 import useIngredients from "../hooks/useIngredients";
 import { FaChevronDown } from "react-icons/fa";
@@ -64,8 +63,8 @@ const IngredientList = ({
   );
 
   return (
-    <Box px={4}>
-      <Flex justifyContent={"space-between"} marginBottom={2}>
+    <Box px={4} marginBottom={8} >
+      <Flex justifyContent={"space-between"} marginBottom={1} mr={4}>
         <Heading fontSize={"xl"}>Ingredienser</Heading>
         {/* Only renders clear button if there are selected ingredients ✨*/}
         {selectedIngredients.length > 0 ? (
@@ -81,7 +80,8 @@ const IngredientList = ({
           </Box>
         ) : null}
       </Flex>
-      <Flex px={2} wrap="wrap" gap={1} marginBottom={3}>
+      {selectedIngredients.length > 0 ? (
+      <Flex px={2} py={2} wrap="wrap" gap={1} marginBottom={2}>
         {selectedIngredients.map((ingredient) => (
           <Box
             as="button"
@@ -92,6 +92,7 @@ const IngredientList = ({
           </Box>
         ))}
       </Flex>
+      ) : null}
      {/* Menu used as drop down select */}
      <Menu onOpen={inputFocus} placement={"top"} variant={"flushed"} >
         <MenuButton as={Button}  rightIcon={<FaChevronDown />}

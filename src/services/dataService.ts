@@ -20,3 +20,10 @@ export const fetchIngredients = () => {
 
   return Promise.resolve(ingredientData);
 };
+
+import dietData from '../data/diet_tags.json';
+
+export const fetchDiets = () => {
+
+  return Promise.resolve(dietData);
+};

@@ -120,7 +120,7 @@ const theme = extendTheme({
   
     Badge: {
       baseStyle: (props: any) => ({
-        bg: "#2C3245",
+        bg: "#44444b",
         color: "creamwhite.500",
         textTransform: 'capitalize',
         fontWeight: "bold",

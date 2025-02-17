@@ -1,6 +1,7 @@
 import { GridItem,Heading, useColorMode } from "@chakra-ui/react";
 import CategoryList from "./CategoryList";
 import IngredientList from "./IngredientList";
+import DietList from "./DietList";
 import { Tag } from '../hooks/useRecipes';
 
 interface AsideProps {
@@ -8,9 +9,11 @@ interface AsideProps {
   onSelectIngredient: (ingredient: Tag) => void; 
   onClearIngredients: () => void;
   selectedIngredients: Tag[]; 
+  onSelectDiet: (diet: Tag | null) => void;
+  selectedDiet: Tag | null; 
 }
 
-const Aside = ({ onSelectCategory, onSelectIngredient, onClearIngredients, selectedIngredients }: AsideProps) => {
+const Aside = ({ onSelectCategory, onSelectIngredient, onClearIngredients, selectedIngredients,onSelectDiet,selectedDiet }: AsideProps) => {
   const { colorMode } = useColorMode();
   
  
@@ -29,6 +32,8 @@ const Aside = ({ onSelectCategory, onSelectIngredient, onClearIngredients, selec
         onClearIngredients={onClearIngredients}
         selectedIngredients={selectedIngredients}
       />
+
+    <DietList onSelectDiet={onSelectDiet} selectedDiet={selectedDiet} />
     </GridItem>
   );
 };

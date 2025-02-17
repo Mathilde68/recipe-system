@@ -12,9 +12,10 @@ import { Tag } from '../hooks/useRecipes';
 interface RecipeListProps {
   selectedCategory: number | null;
   selectedIngredients: Tag[]; 
+  selectedDiet: Tag | null;
 }
 
-const RecipeList = ({ selectedCategory, selectedIngredients }: RecipeListProps) => {
+const RecipeList = ({ selectedCategory, selectedIngredients, selectedDiet }: RecipeListProps) => {
   const recipes = useRecipes();
   const [searchQuery, setSearchQuery] = useState('');
   const { colorMode } = useColorMode();
@@ -25,13 +26,14 @@ const RecipeList = ({ selectedCategory, selectedIngredients }: RecipeListProps) 
 
   const filteredRecipes = recipes.filter(recipe => {
     const categoryMatch = selectedCategory ? recipe.category._id === selectedCategory : true;
+    const dietMatch = selectedDiet ? recipe.diet_type_tags.some(tag => tag._id === selectedDiet._id) : true;
     const ingredientMatch = selectedIngredients.length > 0 
       ? selectedIngredients.some(ingredient => 
           recipe.ingredient_tags.some(tag => tag._id === ingredient._id)) 
       : true;
     const searchMatch = recipe.title.toLowerCase().includes(searchQuery.toLowerCase());
 
-    return categoryMatch && ingredientMatch && searchMatch;
+    return categoryMatch && ingredientMatch && dietMatch && searchMatch;
   });
 
 
