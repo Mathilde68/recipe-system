@@ -1,5 +1,4 @@
-{
-  "ingredient_tags": [
+[
     {"_id": 1, "name": "Appelsin"},
     {"_id": 2, "name": "Banan"},
     {"_id": 3, "name": "Blåbær"},
@@ -41,4 +40,4 @@
     {"_id": 39, "name": "Vindruer"},
     {"_id": 40, "name": "Æble"}
   ]
-}
+

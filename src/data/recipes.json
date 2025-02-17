@@ -1,6 +1,179 @@
-[
+[ {
+  "_id": "1",
+  "title": "Chokoladebjørn Cream Puffs",
+  "category": {
+    "_id": 9,
+    "name": "Flødekager"
+  },
+  "image_src": "cream_puff.jpg",
+  "ingredient_groups": [
+    {
+      "name": "Choux Dej",
+      "ingredients": [
+        { "name": "Vand", "amount": "125 ml" },
+        { "name": "Smør", "amount": "50 g" },
+        { "name": "Hvedemel", "amount": "75 g" },
+        { "name": "Æg", "amount": "2 stk" },
+        { "name": "Salt", "amount": "1 knivspids" }
+      ]
+    },
+    {
+      "name": "Craquelin",
+      "ingredients": [
+        { "name": "Smør", "amount": "50 g" },
+        { "name": "Brun farin", "amount": "50 g" },
+        { "name": "Hvedemel", "amount": "60 g" }
+      ]
+    },
+    {
+      "name": "Chokoladecreme",
+      "ingredients": [
+        { "name": "Fløde", "amount": "2.5 dl" },
+        { "name": "Mørk chokolade", "amount": "200 g" },
+        { "name": "Æggeblomme", "amount": "2 stk" },
+        { "name": "Sukker", "amount": "50 g" },
+        { "name": "Vaniljeekstrakt", "amount": "1 tsk" }
+      ]
+    }
+  ],
+  "procedure_steps": [
+    {
+      "name": "Choux Dej",
+      "steps": [
+        "Kog vand, smør og salt i en gryde.",
+        "Tilsæt mel og rør kraftigt, indtil dejen løsner sig fra gryden.",
+        "Tag gryden af varmen og tilsæt æg ét ad gangen, mens du rør godt.",
+        "Sprøjt eller form dejen i små boller på en bageplade.",
+        "Bag ved 200°C i 20-25 minutter, indtil de er gyldne og hule."
+      ]
+    },
+    {
+      "name": "Craquelin",
+      "steps": [
+        "Bland smør, farin og mel til en ensartet dej.",
+        "Rul dejen ud mellem to stykker bagepapir til en tynd skive.",
+        "Skær cirkler ud, der passer til choux-dejen.",
+        "Læg craquelin-skiverne oven på choux-dejen før bagning."
+      ]
+    },
+    {
+      "name": "Chokoladecreme",
+      "steps": [
+        "Varm fløden op i en gryde, men kog den ikke.",
+        "Hæld den varme fløde over hakket chokolade og rør, indtil chokoladen er smeltet.",
+        "Pisk æggeblommer og sukker lyst, og tilsæt den varme chokoladeblanding.",
+        "Kog cremen under omrøring, indtil den tykner.",
+        "Afkøl cremen og fyld den i choux-bollerne."
+      ]
+    }
+  ],
+  "quick_info": [
+    "Bages ved 200°C",
+    "20-25 minutter",
+    "Fyldt med chokoladecreme"
+  ],
+  "ingredient_tags": [
+    { "_id": 5, "name": "Chokolade" }
+  ],
+  "diet_type_tags": [],
+  "created_at": "04-02-2025",
+  "last_edited_at": "04-02-2025"
+},
+{
+  "_id": "2",
+  "title": "Hindbær Spandauer",
+  "category": {
+    "_id": 11,
+    "name": "Wienerbrød"
+  },
+  "image_src": "spandauer.jpg",
+  "ingredient_groups": [
+    {
+      "name": "Dej",
+      "ingredients": [
+        { "name": "Hvedemel", "amount": "500 g" },
+        { "name": "Mælk", "amount": "250 ml" },
+        { "name": "Gær", "amount": "50 g" },
+        { "name": "Sukker", "amount": "75 g" },
+        { "name": "Smør", "amount": "250 g" },
+        { "name": "Æg", "amount": "1 stk" },
+        { "name": "Salt", "amount": "1 tsk" }
+      ]
+    },
+    {
+      "name": "Marcipan Remonce",
+      "ingredients": [
+        { "name": "Marcipan", "amount": "100 g" },
+        { "name": "Smør", "amount": "100 g" },
+        { "name": "Sukker", "amount": "100 g" }
+      ]
+    },
+    {
+      "name": "Fyld",
+      "ingredients": [
+        { "name": "Hindbærsylt", "amount": "200 g" }
+      ]
+    },
+    {
+      "name": "Glasur",
+      "ingredients": [
+        { "name": "Flormelis", "amount": "100 g" },
+        { "name": "Vand", "amount": "1-2 spsk" }
+      ]
+    }
+  ],
+  "procedure_steps": [
+    {
+      "name": "Dej",
+      "steps": [
+        "Bland mel, mælk, gær, sukker, æg og salt i en skål og ælt til en smidig dej.",
+        "Fold det kolde smør ind i dejen ved at folde dejens kanter ind mod midten.",
+        "Rul og fold dejen i 3 omgange i et 3X3 fold. Du ender med 27 lag",
+        "Lad dejen hvile i køleskabet i mindst 1 time."
+      ]
+    },
+    {
+      "name": "Marcipan Remonce",
+      "steps": [
+        "Bland marcipan, smør og flormelis til en cremet remonce.",
+        "Lad remoncen hvile i køleskabet, indtil den er klar til brug."
+      ]
+    },
+    {
+      "name": "Formning og Bagning",
+      "steps": [
+        "Rul dejen ud til en firkant på ca. 0,5 cm tykkelse.",
+        "Skær dejen i mindre firkanter (ca. 10x10 cm).",
+        "Fordel en klat marcipan remonce i midten af hver firkant.",
+        "Tilføj en teskefuld hindbærsylt ovenpå remoncen.",
+        "Fold hjørnerne af dejen ind mod midten og pres dem let sammen.",
+        "Lad spandauerne hæve i 30 minutter ved stuetemperatur.",
+        "Bag ved 200°C i 15-20 minutter, indtil de er gyldenbrune."
+      ]
+    },
+    {
+      "name": "Glasur",
+      "steps": [
+        "Bland flormelis og vand til en glat glasur.",
+        "Pensl glasuren over de varme spandauer."
+      ]
+    }
+  ],
+  "quick_info": [
+    "Bages ved 200°C",
+    "15-20 minutter",
+    "Giver 12 stk"
+  ],
+  "ingredient_tags": [
+    { "_id": 24, "name": "Marcipan" },
+    { "_id": 13, "name": "Hindbær" }
+  ],
+  "diet_type_tags": [],
+  "created_at": "04-02-2025",
+  "last_edited_at": "04-02-2025"
+},
   {
-    "_id": "1",
+    "_id": "3",
     "title": "Chokolade Chip Cookies",
     "category": {
       "_id": 2,
@@ -59,11 +232,11 @@
         "name": "Vegan"
       }
     ],
-    "created_at": "2024-09-22T12:00:00Z",
-    "last_edited_at": "2024-09-22T12:00:00Z"
+    "created_at": "04-02-2025",
+    "last_edited_at": "04-02-2025"
   },
   {
-    "_id": "2",
+    "_id": "4",
     "title": "Hindbær Mini-tærter",
     "category": {
       "_id": 1,
@@ -153,11 +326,11 @@
       { "_id": 24, "name": "Marcipan" }
     ],
     "diet_type_tags": [],
-    "created_at": "2024-09-21T10:30:00Z",
-    "last_edited_at": "2024-09-21T11:00:00Z"
+    "created_at": "04-02-2025",
+    "last_edited_at": "04-02-2025"
   },
   {
-    "_id": "3",
+    "_id": "5",
     "title": "Brownies",
     "category": {
       "_id": 5,
@@ -224,11 +397,11 @@
       }
     ],
     "diet_type_tags": [],
-    "created_at": "2024-09-21T10:30:00Z",
-    "last_edited_at": "2024-09-21T11:00:00Z"
+    "created_at": "04-02-2025",
+    "last_edited_at": "04-02-2025"
   },
   {
-    "_id": "4",
+    "_id": "6",
     "title": "Æble tærte",
     "category": {
       "_id": 1,
@@ -318,11 +491,11 @@
         "name": "Laktose fri"
       }
     ],
-    "created_at": "2024-09-21T10:30:00Z",
-    "last_edited_at": "2024-09-21T11:00:00Z"
+    "created_at": "04-02-2025",
+    "last_edited_at": "04-02-2025"
   },
   {
-    "_id": "5",
+    "_id": "7",
     "title": "Bananpandekager",
     "category": {
       "_id": 15,
@@ -387,11 +560,75 @@
         "name": "Uden sukker"
       }
     ],
-    "created_at": "2024-02-12T10:30:00Z",
-    "last_edited_at": "2024-02-12T11:00:00Z"
+    "created_at": "04-02-2025",
+    "last_edited_at": "04-02-2025"
+  },{
+    "_id": "8",
+    "title": "Påskeæg",
+    "category": {
+      "_id": 14,
+      "name": "Konfekt & Petit Fours"
+    },
+    "image_src": "paaskeaeg.jpg",
+    "ingredient_groups": [
+      {
+        "name": "Citron Pistacie",
+        "ingredients": [
+          { "name": "Marcipan", "amount": "120 g" },
+          { "name": "Pistacienødder", "amount": "50 g" },
+          { "name": "Citronskal", "amount": "1 tsk" },
+          { "name": "Lemon hvid chokolade", "amount": "100g-150g" }
+        ]
+      },
+      {
+        "name": "Hindbær Lakrids",
+        "ingredients": [
+          { "name": "Marcipan", "amount": "120g" },
+          { "name": "Frysetørret hindbær", "amount": "1 spsk" },
+          { "name": "Lakridspulver", "amount": "2 tsk" },
+          { "name": "Lakrids crisp", "amount": "1 tsk" },
+          { "name": "Ruby chokolade", "amount": "100g-150g" }
+
+        ]
+      }
+    ],
+    "procedure_steps": [
+      {
+        "name": "Citron Pistacie",
+        "steps": [
+          "Blend pistacie fint.",
+          "Blend marcipanen med citronskal og pistaciepulveret.",
+          "Form til æg.",
+          "Overtræk og pynt med pistacie."
+        ]
+      },
+      {
+        "name": "Hindbær Lakrids",
+        "steps": [
+          "Blend frysetørret hindbær og bland sammen med halvdelen af marcipanen.",
+          "Bland lakridspulver og lakrids crisp med den anden halvdel af marcipanen.",
+          "Form til æg, med halv af hver slags marcipan.",
+          "Overtræk og pynt med hindbær og lakridscrisp."
+        ]
+      }
+    ],
+    "quick_info": [
+      "8 stk af hver slags"
+    ],
+    "ingredient_tags": [
+      { "_id": 5, "name": "Chokolade" },
+      { "_id": 24, "name": "Marcipan" },
+      { "_id": 28, "name": "Pistacie" },
+      { "_id": 6, "name": "Citron" },
+      { "_id": 13, "name": "Hindbær" },
+      { "_id": 20, "name": "Lakrids" }
+    ],
+    "diet_type_tags": [],
+    "created_at": "04-02-2025",
+    "last_edited_at": "04-02-2025"
   },
   {
-    "_id": "6",
+    "_id": "9",
     "title": "Sarah Bernhardt",
     "category": {
       "_id": 13,
@@ -457,181 +694,8 @@
       { "_id": 24, "name": "Marcipan" }
     ],
     "diet_type_tags": [],
-    "created_at": "2024-02-12T12:00:00Z",
-    "last_edited_at": "2024-02-12T12:30:00Z"
-  },
-  {
-    "_id": "7",
-    "title": "Chokoladebjørn Cream Puffs",
-    "category": {
-      "_id": 9,
-      "name": "Flødekager"
-    },
-    "image_src": "cream_puff.jpg",
-    "ingredient_groups": [
-      {
-        "name": "Choux Dej",
-        "ingredients": [
-          { "name": "Vand", "amount": "125 ml" },
-          { "name": "Smør", "amount": "50 g" },
-          { "name": "Hvedemel", "amount": "75 g" },
-          { "name": "Æg", "amount": "2 stk" },
-          { "name": "Salt", "amount": "1 knivspids" }
-        ]
-      },
-      {
-        "name": "Craquelin",
-        "ingredients": [
-          { "name": "Smør", "amount": "50 g" },
-          { "name": "Brun farin", "amount": "50 g" },
-          { "name": "Hvedemel", "amount": "60 g" }
-        ]
-      },
-      {
-        "name": "Chokoladecreme",
-        "ingredients": [
-          { "name": "Fløde", "amount": "2.5 dl" },
-          { "name": "Mørk chokolade", "amount": "200 g" },
-          { "name": "Æggeblomme", "amount": "2 stk" },
-          { "name": "Sukker", "amount": "50 g" },
-          { "name": "Vaniljeekstrakt", "amount": "1 tsk" }
-        ]
-      }
-    ],
-    "procedure_steps": [
-      {
-        "name": "Choux Dej",
-        "steps": [
-          "Kog vand, smør og salt i en gryde.",
-          "Tilsæt mel og rør kraftigt, indtil dejen løsner sig fra gryden.",
-          "Tag gryden af varmen og tilsæt æg ét ad gangen, mens du rør godt.",
-          "Sprøjt eller form dejen i små boller på en bageplade.",
-          "Bag ved 200°C i 20-25 minutter, indtil de er gyldne og hule."
-        ]
-      },
-      {
-        "name": "Craquelin",
-        "steps": [
-          "Bland smør, farin og mel til en ensartet dej.",
-          "Rul dejen ud mellem to stykker bagepapir til en tynd skive.",
-          "Skær cirkler ud, der passer til choux-dejen.",
-          "Læg craquelin-skiverne oven på choux-dejen før bagning."
-        ]
-      },
-      {
-        "name": "Chokoladecreme",
-        "steps": [
-          "Varm fløden op i en gryde, men kog den ikke.",
-          "Hæld den varme fløde over hakket chokolade og rør, indtil chokoladen er smeltet.",
-          "Pisk æggeblommer og sukker lyst, og tilsæt den varme chokoladeblanding.",
-          "Kog cremen under omrøring, indtil den tykner.",
-          "Afkøl cremen og fyld den i choux-bollerne."
-        ]
-      }
-    ],
-    "quick_info": [
-      "Bages ved 200°C",
-      "20-25 minutter",
-      "Fyldt med chokoladecreme"
-    ],
-    "ingredient_tags": [
-      { "_id": 5, "name": "Chokolade" }
-    ],
-    "diet_type_tags": [],
-    "created_at": "2024-02-12T12:00:00Z",
-    "last_edited_at": "2024-02-12T12:30:00Z"
-  },
-  {
-    "_id": "8",
-    "title": "Hindbær Spandauer",
-    "category": {
-      "_id": 11,
-      "name": "Wienerbrød"
-    },
-    "image_src": "spandauer.jpg",
-    "ingredient_groups": [
-      {
-        "name": "Dej",
-        "ingredients": [
-          { "name": "Hvedemel", "amount": "500 g" },
-          { "name": "Mælk", "amount": "250 ml" },
-          { "name": "Gær", "amount": "50 g" },
-          { "name": "Sukker", "amount": "75 g" },
-          { "name": "Smør", "amount": "250 g" },
-          { "name": "Æg", "amount": "1 stk" },
-          { "name": "Salt", "amount": "1 tsk" }
-        ]
-      },
-      {
-        "name": "Marcipan Remonce",
-        "ingredients": [
-          { "name": "Marcipan", "amount": "100 g" },
-          { "name": "Smør", "amount": "100 g" },
-          { "name": "Sukker", "amount": "100 g" }
-        ]
-      },
-      {
-        "name": "Fyld",
-        "ingredients": [
-          { "name": "Hindbærsylt", "amount": "200 g" }
-        ]
-      },
-      {
-        "name": "Glasur",
-        "ingredients": [
-          { "name": "Flormelis", "amount": "100 g" },
-          { "name": "Vand", "amount": "1-2 spsk" }
-        ]
-      }
-    ],
-    "procedure_steps": [
-      {
-        "name": "Dej",
-        "steps": [
-          "Bland mel, mælk, gær, sukker, æg og salt i en skål og ælt til en smidig dej.",
-          "Fold det kolde smør ind i dejen ved at folde dejens kanter ind mod midten.",
-          "Rul og fold dejen i 3 omgange i et 3X3 fold. Du ender med 27 lag",
-          "Lad dejen hvile i køleskabet i mindst 1 time."
-        ]
-      },
-      {
-        "name": "Marcipan Remonce",
-        "steps": [
-          "Bland marcipan, smør og flormelis til en cremet remonce.",
-          "Lad remoncen hvile i køleskabet, indtil den er klar til brug."
-        ]
-      },
-      {
-        "name": "Formning og Bagning",
-        "steps": [
-          "Rul dejen ud til en firkant på ca. 0,5 cm tykkelse.",
-          "Skær dejen i mindre firkanter (ca. 10x10 cm).",
-          "Fordel en klat marcipan remonce i midten af hver firkant.",
-          "Tilføj en teskefuld hindbærsylt ovenpå remoncen.",
-          "Fold hjørnerne af dejen ind mod midten og pres dem let sammen.",
-          "Lad spandauerne hæve i 30 minutter ved stuetemperatur.",
-          "Bag ved 200°C i 15-20 minutter, indtil de er gyldenbrune."
-        ]
-      },
-      {
-        "name": "Glasur",
-        "steps": [
-          "Bland flormelis og vand til en glat glasur.",
-          "Pensl glasuren over de varme spandauer."
-        ]
-      }
-    ],
-    "quick_info": [
-      "Bages ved 200°C",
-      "15-20 minutter",
-      "Giver 12 stk"
-    ],
-    "ingredient_tags": [
-      { "_id": 24, "name": "Marcipan" },
-      { "_id": 13, "name": "Hindbær" }
-    ],
-    "diet_type_tags": [],
-    "created_at": "2024-09-22T12:00:00Z",
-    "last_edited_at": "2024-09-22T12:00:00Z"
+    "created_at": "04-02-2025",
+    "last_edited_at": "04-02-2025"
   }
+ 
 ]

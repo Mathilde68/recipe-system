@@ -23,12 +23,11 @@ const RecipeCard = ({ recipe }: Props) => {
   const img_url = img_preurl + recipe.image_src;
   return (
    
-      <Flex basis={"350px"} grow={"1"} margin="10px">
+      <Flex basis={"350px"} grow={"1"} margin="10px" >
         <Card
           width="100%"
           borderRadius={"2xl"}
-          // Ensure the card takes up the full width of its parent
-          height={"350px"}
+          height={"375px"}
           bg={colorMode === "dark" ? "darkbrown.500" : "creamwhite.500"}
           display="flex"
           flexDirection="column"
@@ -43,7 +42,8 @@ const RecipeCard = ({ recipe }: Props) => {
             alt={recipe.title}
           />
            <Link to={`/recipe/${recipe._id}`}>
-          <CardBody w="100%">
+          <CardBody w="100%"  height={"150px"} display={"flex"} flexDirection={"column"} py={"5"} pt={"6"} pb={"2"}>
+            <Stack direction="column" spacing={1} >
             <Heading
               fontSize="2xl"
               fontWeight="600"
@@ -58,8 +58,8 @@ const RecipeCard = ({ recipe }: Props) => {
             >
               {recipe.category.name}
             </Text>
-
-            <Stack direction="row" spacing={2} mt={2}>
+            </Stack>
+            <Stack direction="row" spacing={1} mt={2} flexWrap={"wrap"} sx={{ maxHeight: "100px", overflowY: "clip"}}>
               {recipe.ingredient_tags.map((ingredientTag) => (
                 <RecipeTag key={ingredientTag.name} tag={ingredientTag} />
               ))}

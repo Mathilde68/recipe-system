@@ -5,7 +5,7 @@ const ColorModeSwitch = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
     <HStack>
-       <MdDarkMode size="1.5rem" color="#2C2020"/>
+       <MdDarkMode size="1.5rem" color="#EEDED9"/>
       <Switch
         onChange={toggleColorMode}
         colorScheme="peachbrown"

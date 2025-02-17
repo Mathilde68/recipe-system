@@ -12,7 +12,7 @@ const NavBar = () => {
         <ChakraLink as={ReactRouterLink} to='/'>
         <MdBakeryDining size={"4rem"} color="#F0B690" /> 
         </ChakraLink>
-       <Heading size="md">Thilde's recipe collection</Heading>
+       <Heading size="md">Thilde's sweets collection</Heading>
        </HStack>
         
       <ColorModeSwitch />
