@@ -11,8 +11,9 @@ import {
   Button,
   Input
 } from "@chakra-ui/react";
-import useIngredients from "../hooks/useIngredients";
 import { FaChevronDown } from "react-icons/fa";
+
+import useIngredients from "../hooks/useIngredients";
 import RecipeTag from "./RecipeTag";
 import { Tag } from "../hooks/useRecipes";
 import {  useState, useRef } from "react";
@@ -109,7 +110,7 @@ const IngredientList = ({
           width={"100%"}
           >Vælg Ingredienser</MenuButton>
         <MenuList bg={ colorMode === "dark" ? "darkbrown.700" : "palecream.500" } pt={0} sx={{ maxHeight: "500px", overflowY: "auto" }} >
-          {/* Input box for searching through ingredients */}
+          {/* Input box for searching through the ingredients */}
           <Box m={1}>
             <Input variant='filled'
             

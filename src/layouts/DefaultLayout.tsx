@@ -19,7 +19,7 @@ const DefaultLayout = () => {
       </GridItem>
       
 
-      <GridItem mt={{base:8, lg:0}} area="main">
+      <GridItem mt={{base: "4rem", lg:0}} area="main">
         <Outlet />
       </GridItem>
     </Grid>

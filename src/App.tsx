@@ -16,15 +16,15 @@ import DefaultLayout from "./layouts/DefaultLayout";
 
 const router = createBrowserRouter([
   {
-    path: "/", // Root path for the homepage
-    element: <HomeLayout />,  // Use HomeLayout for the home page
+    path: "/", // My Root path for the homepage
+    element: <HomeLayout />,  // Uses HomeLayout for the home page
   },
   {
     path: "/recipe/:id", // Path for recipe details
-    element: <DefaultLayout />,  // Use DefaultLayout for other pages
+    element: <DefaultLayout />,  // Uses DefaultLayout for these pages
     children: [
       {
-        index: true, // Recipe details page
+        index: true, // Defines RecipeDetails as indexed child hereof, so the path will work
         element: <RecipeDetails />,
       },
     ],

@@ -9,7 +9,6 @@ import {
   Divider,
   VStack,
   Card,
-  CardBody,
   Button,
   useColorMode,
 } from "@chakra-ui/react";
@@ -21,54 +20,65 @@ import RecipeTag from "./RecipeTag";
 const img_preurl = "/src/img/";
 
 const RecipeDetails = () => {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const { colorMode } = useColorMode();
+
   const { id } = useParams<{ id: string }>();
+
   const recipes = useRecipes();
   const recipe = recipes.find((recipe) => recipe._id === id);
 
+
+  /* renders a heading if the recipe is not found */
   if (!recipe) {
-    return <Heading py={"5rem"} textAlign={"center"}>Recipe not found</Heading>;
+    return (
+      <Heading py={"5rem"} textAlign={"center"}>
+        Recipe not found
+      </Heading>
+    );
   }
 
   const img_url = img_preurl + recipe.image_src;
-
 
   return (
     <Card
       borderRadius="2xl"
       maxW="1000px"
-      mx={{base:"2rem", md: "3rem", lg: "auto"}}
+      mx={{ base: "2rem", md: "3rem", lg: "auto" }}
       my={10}
       boxShadow={"lg"}
       bg={colorMode === "dark" ? "darkbrown.500" : "creamwhite.500"}
     >
-
       {/* Tilbage knap ✨✨ */}
-     
-        <Button  onClick={() => navigate(-1)} 
-         width={"3rem"} height={"3rem"}
+      <Button
+        onClick={() => navigate(-1)}
+        width={"3rem"}
+        height={"3rem"}
         variant="flushed"
         p={0}
-        position={"absolute"} top={"1rem"} left={"1rem"}  borderRadius={"5rem"} 
+        position={"absolute"}
+        top={"1rem"}
+        left={"1rem"}
+        borderRadius={"5rem"}
         bg={colorMode === "dark" ? "rosebrown.500" : "palecream.500"}
-        color={colorMode === "dark" ? "palecream.500": "rosebrown.500" }
-        >
-        <IoReturnUpBack size="2rem"  />
-        </Button>
-       
+        color={colorMode === "dark" ? "palecream.500" : "rosebrown.500"}
+        boxShadow={"md"}
+      >
+        <IoReturnUpBack size="2rem" />
+      </Button>
+
       <Image
         src={img_url}
         alt={recipe.title}
         borderTopRadius="2xl"
         objectFit="cover"
-        objectPosition={{base: "center", md: "50% 60%"}}
+        objectPosition={{ base: "center", md: "50% 60%" }}
         boxSize="100%"
         height={"350px"}
       />
       <Box>
         <Heading
-          fontSize={{base:"2xl", md:"3xl"}}
+          fontSize={{ base: "2xl", md: "3xl" }}
           position="relative"
           top="-35px"
           left="-25px"
@@ -85,11 +95,30 @@ const RecipeDetails = () => {
       </Box>
       {/* Quick info boks */}
       {recipe.quick_info.length > 0 && (
-        <Flex position="relative" top={"-15px"} justifyContent={"flex-end"} mr={4}>
-          <Flex direction="row" border={"1px solid"} borderRadius={"md"}
-            borderColor={"peachbrown.500"} py={2} px={3} gap={4}>
+        <Flex
+          position="relative"
+          top={"-15px"}
+          justifyContent={"flex-end"}
+          mr={4}
+        >
+          <Flex
+            direction="row"
+            border={"1px solid"}
+            borderRadius={"md"}
+            borderColor={
+              colorMode === "dark" ? "peachbrown.400" : "rosebrown.500"
+            }
+            py={2}
+            px={3}
+            gap={4}
+          >
             {recipe.quick_info.map((info) => (
-              <Text fontSize={{base:"sm", md:"md"}} color={colorMode === "dark" ? "peachbrown.400" : "rosebrown.500"}>
+              <Text
+                fontSize={{ base: "sm", md: "md" }}
+                color={
+                  colorMode === "dark" ? "peachbrown.400" : "rosebrown.500"
+                }
+              >
                 {info}
               </Text>
             ))}
@@ -97,21 +126,35 @@ const RecipeDetails = () => {
         </Flex>
       )}
       {/* 🔥✨ Main opskrift indhold ✨🔥 */}
-      <Flex mt={recipe.quick_info.length > 0 ? {base:"-40px", md:"-25px"} : 2} pb={10} direction={{ base: "column", md: "row" }}>
-        <VStack fontSize="sm" width={{ base: "100%", md: "30%" }} align="start" px={{base: 6, md: 8}} 
-        spacing={{base:5, md:8}} minHeight={{base:"auto", lg: "500px"}}>
+      <Flex
+        mt={recipe.quick_info.length > 0 ? { base: "-40px", md: "-25px" } : 2}
+        pb={10}
+        direction={{ base: "column", md: "row" }}
+      >
+        <VStack
+          fontSize="sm"
+          width={{ base: "100%", md: "30%" }}
+          align="start"
+          px={{ base: 6, md: 8 }}
+          spacing={{ base: 5, md: 8 }}
+          minHeight={{ base: "auto", lg: "500px" }}
+        >
           <Box>
-            <Text fontSize={ "1.1rem"} fontWeight="bold">
+            <Text fontSize={"1.1rem"} fontWeight="bold">
               Ingredienser
             </Text>
             <VStack fontSize="0.9rem" align="start" spacing={4} direction="row">
               {recipe.ingredient_groups.map((group) => (
                 <Box key={group.name}>
-                   {/* //Vis kun titel group.name hvis der er flere ingrediensgrupper */}
+                  {/* Vis kun titel group.name hvis der er flere ingrediensgrupper */}
                   {recipe.ingredient_groups.length > 1 && (
                     <Text
                       fontWeight="semibold"
-                      color={colorMode === "dark" ? "peachbrown.400" : "rosebrown.500"}
+                      color={
+                        colorMode === "dark"
+                          ? "peachbrown.400"
+                          : "rosebrown.500"
+                      }
                     >
                       {group.name}
                     </Text>
@@ -119,7 +162,11 @@ const RecipeDetails = () => {
                   {group.ingredients.map((ingredient) => (
                     <Text
                       key={ingredient.name}
-                      color={colorMode === "dark" ? "peachbrown.400" : "rosebrown.500"}
+                      color={
+                        colorMode === "dark"
+                          ? "peachbrown.400"
+                          : "rosebrown.500"
+                      }
                     >
                       {ingredient.amount} {ingredient.name}
                     </Text>
@@ -133,7 +180,9 @@ const RecipeDetails = () => {
             <Text fontSize={"1.1rem"} fontWeight="bold">
               Kategori
             </Text>
-            <Text color={colorMode === "dark" ? "peachbrown.400" : "rosebrown.500"}>
+            <Text
+              color={colorMode === "dark" ? "peachbrown.400" : "rosebrown.500"}
+            >
               {recipe.category.name}
             </Text>
           </Box>
@@ -175,11 +224,18 @@ const RecipeDetails = () => {
             orientation="vertical"
             borderWidth="1px"
             opacity="0.9"
-            borderColor={colorMode === "dark" ? "peachbrown.500" : "rosebrown.500"}
+            borderColor={
+              colorMode === "dark" ? "peachbrown.500" : "rosebrown.300"
+            }
           />
         </Stack>
 
-        <Box width={{ base: "100%", md: "70%" }} p={{base: 6, md: 4}} pt={{base:10, md:0}} pl={{base: 6, md: "5%"}}>
+        <Box
+          width={{ base: "100%", md: "70%" }}
+          p={{ base: 6, md: 4 }}
+          pt={{ base: 10, md: 0 }}
+          pl={{ base: 6, md: "5%" }}
+        >
           <VStack align="start" spacing={10}>
             {recipe.procedure_steps.map((step) => (
               <Box key={step.name}>
@@ -187,14 +243,18 @@ const RecipeDetails = () => {
                   pb={1}
                   fontWeight="semibold"
                   fontSize={"1.1rem"}
-                  color={colorMode === "dark" ? "palecream.500" : "rosebrown.500"}
+                  color={
+                    colorMode === "dark" ? "palecream.500" : "darkbrown.500"
+                  }
                 >
                   {step.name}
                 </Text>
                 <VStack align="start" spacing={2}>
                   {step.steps.map((step) => (
                     <Text
-                      color={colorMode === "dark" ? "palecream.500" : "rosebrown.500"}
+                      color={
+                        colorMode === "dark" ? "palecream.500" : "darkbrown.500"
+                      }
                     >
                       {step}
                     </Text>

@@ -11,8 +11,8 @@ import useDiets from "../hooks/useDiets";
 import { Tag } from "../hooks/useRecipes";
 
 interface DietListProps {
-  onSelectDiet: (diet: Tag | null) => void; // Allow null to clear selection
-  selectedDiet: Tag | null; // Add selectedDiet prop
+  onSelectDiet: (diet: Tag | null) => void; 
+  selectedDiet: Tag | null; 
 }
 
 const DietList = ({ onSelectDiet, selectedDiet }: DietListProps) => {

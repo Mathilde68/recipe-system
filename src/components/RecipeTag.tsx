@@ -3,7 +3,7 @@ import { Tag } from "../hooks/useRecipes";
 
 interface Props {
   tag: Tag;
-  isSelected?: boolean; // Add this prop
+  isSelected?: boolean; 
 }
 
 const colorGroups: { [key: string]: string[] } = {

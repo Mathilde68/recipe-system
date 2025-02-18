@@ -92,7 +92,7 @@ const theme = extendTheme({
   styles: {
     global: (props: any) => ({
     body: {
-        bg: props.colorMode === "dark" ? "richblack.700" : "palecream.500", // Background for dark/light mode
+        bg: props.colorMode === "dark" ? "richblack.700" : "palecream.500", // My background for dark/light mode
         color: props.colorMode === "dark" ? "palecream.500" : "darkbrown.500", // Text color for dark/light mode
       },
     }),
@@ -100,21 +100,20 @@ const theme = extendTheme({
   components: {
     Switch: {
       baseStyle: {
-        // This will apply your custom colors to the switch track and thumb
         track: {
-          bg: "peachbrown.300", // Base color for light mode
+          bg: "peachbrown.300", 
           _checked: {
-            bg: "peachbrown.600", // Base color for dark mode
+            bg: "peachbrown.600", 
           },
         },
         thumb: {
-          bg: "creamwhite.200", // Thumb color
+          bg: "creamwhite.200", 
         },
       },
     },
     Text: {
       baseStyle: (props: any) => ({
-        color: props.colorMode === "dark" ? "palecream.500" : "darkbrown.500", //Overring text color on component level to make it work
+        color: props.colorMode === "dark" ? "palecream.500" : "darkbrown.500", //Overriding text color on component level to make it work
       })
     },
   

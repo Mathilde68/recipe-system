@@ -1,6 +1,8 @@
 import useData from './useData';
 import { fetchRecipes } from '../services/dataService';
 
+// Custom hooks define interfaces and use of useDate hook for fetching data
+
 interface Category {
   _id: number;
   name: string;
@@ -40,6 +42,7 @@ export interface Recipe {
   last_edited_at: string;
 }
 
+// Custom hooks make use of useDate hook for fetching data
 const useRecipes = () => {
   return useData<Recipe>(fetchRecipes);
 };
