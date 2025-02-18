@@ -68,9 +68,8 @@
     }
   ],
   "quick_info": [
-    "Bages ved 200°C",
-    "20-25 minutter",
-    "Fyldt med chokoladecreme"
+    "200°C",
+    "20-25 min"
   ],
   "ingredient_tags": [
     { "_id": 5, "name": "Chokolade" }
@@ -160,9 +159,9 @@
     }
   ],
   "quick_info": [
-    "Bages ved 200°C",
-    "15-20 minutter",
-    "Giver 12 stk"
+    "200°C",
+    "15-20 min",
+    "12 stk"
   ],
   "ingredient_tags": [
     { "_id": 24, "name": "Marcipan" },
@@ -216,9 +215,9 @@
       }
     ],
     "quick_info": [
-      "Bages ved 200°C",
-      "15 min",
-      "Ca. 12 stk"
+      "200°C",
+      "9 min",
+      "12 stk"
     ],
     "ingredient_tags": [
       {
@@ -226,12 +225,7 @@
         "name": "Chokolade"
       }
     ],
-    "diet_type_tags": [
-      {
-        "_id": 2,
-        "name": "Vegan"
-      }
-    ],
+    "diet_type_tags": [],
     "created_at": "04-02-2025",
     "last_edited_at": "04-02-2025"
   },
@@ -317,9 +311,8 @@
       }
     ],
     "quick_info": [
-      "Bages ved 180°C",
-      "15-20 minutter",
-      "Med hindbær og marengs"
+      "180°C",
+      "15 min"
     ],
     "ingredient_tags": [
       { "_id": 13, "name": "Hindbær" },
@@ -386,9 +379,8 @@
       }
     ],
     "quick_info": [
-      "Bakes at 180°C",
-      "25 minutes",
-      "Serves 6"
+      "180°C",
+      "30 min"
     ],
     "ingredient_tags": [
       {
@@ -467,9 +459,8 @@
       }
     ],
     "quick_info": [
-      "Bakes at 180°C",
-      "25 minutes",
-      "Serves 6"
+      "180°C",
+      "25 min"
     ],
     "ingredient_tags": [
       {
@@ -545,7 +536,7 @@
       }
     ],
     "quick_info": [
-      "Uden sukker",
+      "Sukkerfri",
       "Ca. 10 stk"
     ],
     "ingredient_tags": [
@@ -613,7 +604,6 @@
       }
     ],
     "quick_info": [
-      "8 stk af hver slags"
     ],
     "ingredient_tags": [
       { "_id": 5, "name": "Chokolade" },
@@ -686,8 +676,9 @@
       }
     ],
     "quick_info": [
-      "Køl natten over",
-      "175°C i 15 min"
+      "175°C",
+      "15 min",
+      "Køl 12 timer"
     ],
     "ingredient_tags": [
       { "_id": 5, "name": "Chokolade" },

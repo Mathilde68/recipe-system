@@ -11,6 +11,8 @@ import {
 import { Recipe } from "../hooks/useRecipes";
 import RecipeTag from "./RecipeTag";
 import { Link } from "react-router-dom";
+import { Link as ReactRouterLink } from "react-router-dom";
+import { Link as ChakraLink, LinkProps } from "@chakra-ui/react";
 
 interface Props {
   recipe: Recipe;
@@ -23,6 +25,11 @@ const RecipeCard = ({ recipe }: Props) => {
   const img_url = img_preurl + recipe.image_src;
   return (
     <Flex basis={"350px"} grow={"1"} margin="10px">
+      <ChakraLink width="100%"
+        _hover={{textDecoration: "none", boxShadow: "lg"}}
+        borderRadius={"2xl"}
+       
+        boxShadow={"md"} as={ReactRouterLink} to={`/recipe/${recipe._id}`}>
       <Card
         width="100%"
         borderRadius={"2xl"}
@@ -30,6 +37,7 @@ const RecipeCard = ({ recipe }: Props) => {
         bg={colorMode === "dark" ? "darkbrown.500" : "creamwhite.500"}
         display="flex"
         flexDirection="column"
+        _hover={{textDecoration: "none", boxShadow: "xl"}}
       >
         <Image
           borderTopRadius="2xl"
@@ -40,7 +48,8 @@ const RecipeCard = ({ recipe }: Props) => {
           src={img_url}
           alt={recipe.title}
         />
-        <Link to={`/recipe/${recipe._id}`}>
+        
+        
           <CardBody
             w="100%"
             height={"155px"}
@@ -78,8 +87,9 @@ const RecipeCard = ({ recipe }: Props) => {
               ))}
             </Stack>
           </CardBody>
-        </Link>
+        
       </Card>
+      </ChakraLink>
     </Flex>
   );
 };

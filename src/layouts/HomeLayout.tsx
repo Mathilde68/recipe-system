@@ -1,12 +1,16 @@
-import { Grid, GridItem, useBreakpointValue } from '@chakra-ui/react';
+import { Grid, GridItem,Heading, Box,IconButton  } from '@chakra-ui/react';
+import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { Outlet } from 'react-router-dom';
 import { useState } from 'react';
+import { useColorMode, useDisclosure, useBreakpointValue } from '@chakra-ui/react';
+
 import NavBar from '../components/NavBar';
 import Aside from '../components/Aside';
-import { Heading } from "@chakra-ui/react";
 import RecipeList from "../components/RecipeList"; 
-import { useColorMode } from '@chakra-ui/react';
 import { Tag } from '../hooks/useRecipes';
+import AsideToggleButton from '../components/AsideToggleButton'; // Import the new component
+
+
 
 
 
@@ -14,9 +18,10 @@ const HomeLayout = () => {
   const [selectedCategory, setSelectedCategory] = useState<number | null>(null);
   const [selectedIngredients, setSelectedIngredients] = useState<Tag[]>([]);
   const [selectedDiet, setSelectedDiet] = useState<Tag | null>(null); 
-  const { colorMode } = useColorMode(); 
+  const { colorMode } = useColorMode();
+  const { isOpen, onToggle, onClose } = useDisclosure(); 
 
-  const showAside = useBreakpointValue({ base: false, lg: true });
+  const showAside = useBreakpointValue({ base: isOpen, lg: true });
 
 
 
@@ -34,7 +39,7 @@ const HomeLayout = () => {
   };
 
   return (
-    <Grid
+    <Grid 
       templateAreas={{
         lg: `"nav nav" "aside main"`,
         base: `"nav" "main"`,
@@ -45,8 +50,27 @@ const HomeLayout = () => {
       }}
     >
       <GridItem area="nav">
-        <NavBar />
+      
+        <NavBar/>
+
+        <AsideToggleButton isOpen={isOpen} onToggle={onToggle} /> {/* Use the new component */}
       </GridItem>
+
+      {/* Overlay bag Aside der lukker den ved klik */}
+{isOpen && (
+  <Box 
+    position="fixed" 
+    top={0} 
+    left={0} 
+    width="100vw" 
+    height="100vh" 
+    bg="richblack.900" 
+    opacity={0.5}
+    zIndex={1} 
+    onClick={onClose} 
+    display={{ lg: "none" }} 
+  />
+)}
       
       { showAside && (
         <GridItem area={"aside"}>
@@ -56,13 +80,17 @@ const HomeLayout = () => {
             onClearIngredients={handleClearIngredients}
             selectedIngredients={selectedIngredients}
             onSelectDiet={setSelectedDiet}
-            selectedDiet={selectedDiet} // Pass the selectedDiet state
+            selectedDiet={selectedDiet}
+            isOpen={isOpen} 
+            selectedCategory={selectedCategory}
           />
         </GridItem>
       )}
 
-      <GridItem area="main">
-      <Heading textAlign={"center"}  pt={8}> Kager & Søderier opskrifter</Heading>
+      <GridItem  mt={{base:"6rem", lg:8}} area="main">
+        
+      <Heading textAlign={"center"} fontSize='3xl' fontWeight={300} > Thilde's</Heading>
+      <Heading   textAlign={"center"} > Kager & lækkerier</Heading>
       <RecipeList 
       selectedCategory={selectedCategory} 
       selectedIngredients={selectedIngredients} 

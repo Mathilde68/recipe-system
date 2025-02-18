@@ -1,5 +1,5 @@
 import { Flex, Text, Input, InputLeftAddon, InputGroup} from '@chakra-ui/react';
-import { useState } from 'react';
+import { useState,useRef } from 'react';
 import { useColorMode } from '@chakra-ui/react';
 import { FaSearch } from "react-icons/fa";
 
@@ -19,6 +19,7 @@ const RecipeList = ({ selectedCategory, selectedIngredients, selectedDiet }: Rec
   const recipes = useRecipes();
   const [searchQuery, setSearchQuery] = useState('');
   const { colorMode } = useColorMode();
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(e.target.value);
@@ -37,15 +38,23 @@ const RecipeList = ({ selectedCategory, selectedIngredients, selectedDiet }: Rec
   });
 
 
+   // Handle focusing on inputfield for search
+   const inputFocus = () => {
+      if (inputRef.current) {
+        inputRef.current.focus();
+      }
+  };
+
+
     return (
-      <Flex direction="column" padding={10}>
+      <Flex direction="column" padding={{base:5,md:10}}>
        
 
 
-<InputGroup>
-<InputLeftAddon bg={ colorMode === "dark" ? "darkbrown.400" : "rosebrown.200" }><FaSearch /></InputLeftAddon>
-    <Input variant={"filled"}
-    
+<InputGroup px={"10px"} >
+<InputLeftAddon bg={ colorMode === "dark" ? "darkbrown.400" : "rosebrown.200" } onClick={inputFocus}><FaSearch /></InputLeftAddon>
+    <Input 
+        variant={"filled"}
         bg={ colorMode === "dark" ? "richblack.400" : "creamwhite.500" }
         _focus={{ bg: colorMode === "dark" ? "richblack.400" : "creamwhite.500" }}
         _hover={{ bg: colorMode === "dark" ? "richblack.400" : "creamwhite.500"}}
@@ -56,9 +65,11 @@ const RecipeList = ({ selectedCategory, selectedIngredients, selectedDiet }: Rec
         color={ colorMode === "dark" ? "peachbrown.100" : "rosebrown.500" } 
 
         placeholder="Søg i opskrifter..."
+        ref={inputRef}
         value={searchQuery}
         onChange={(e) => {setSearchQuery(e.target.value); }}
         mb={5}
+        
       />
     
   </InputGroup>

@@ -100,6 +100,7 @@ const IngredientList = ({
           borderRadius={4}
           height={"2.2rem"}
           textAlign={"left"}
+          fontSize={{base:"sm", lg:"md"}}
           bg={ colorMode === "dark" ? "darkbrown.700" : "palecream.500" }
           _focus={{ bg: colorMode === "dark" ? "darkbrown.700" : "palecream.500" }}
           _hover={{ bg: colorMode === "dark" ? "rosebrown.600" : "rosebrown.100" }}

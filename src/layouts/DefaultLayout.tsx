@@ -2,6 +2,8 @@ import { Grid, GridItem } from '@chakra-ui/react';
 import { Outlet } from 'react-router-dom';
 import NavBar from '../components/NavBar';
 
+
+
 const DefaultLayout = () => {
   return (
     <Grid
@@ -13,11 +15,11 @@ const DefaultLayout = () => {
       }}
     >
       <GridItem area="nav">
-        <NavBar />
+      <NavBar />
       </GridItem>
       
 
-      <GridItem area="main">
+      <GridItem mt={{base:8, lg:0}} area="main">
         <Outlet />
       </GridItem>
     </Grid>
