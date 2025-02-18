@@ -687,6 +687,286 @@
     "diet_type_tags": [],
     "created_at": "04-02-2025",
     "last_edited_at": "04-02-2025"
+  },
+  {
+    "_id": "10",
+    "title": "Blåbær Lime Cheesecake",
+    "category": {
+      "_id": 7,
+      "name": "Cheesecake"
+    },
+    "image_src": "blueberrycheesecake.jpg",
+    "ingredient_groups": [
+      {
+        "name": "Kiksebund",
+        "ingredients": [
+          { "name": "Havrekiks", "amount": "150 g" },
+          { "name": "Smør", "amount": "100 g" }
+        ]
+      },
+      {
+        "name": "Blåbær Sylt",
+        "ingredients": [
+          { "name": "Frosne blåbær", "amount": "500g" },
+          { "name": "Sukker", "amount": "140g" }
+        ]
+      },
+      {
+        "name": "Flødeostecreme",
+        "ingredients": [
+          { "name": "Piskefløde", "amount": "3 dl" },
+          { "name": "Flødeost", "amount": "300g" },
+          { "name": "Sukker", "amount": "70g" },
+          { "name": "Vaniljesukker", "amount": "1 tsk" },
+          { "name": "Lime", "amount": "Skal og saft af 2" },
+          { "name": "Husblas", "amount": "4 blade" }
+        ]
+      },
+      {
+        "name": "Blåbær Gelé",
+        "ingredients": [
+          { "name": "Blåbær Puré", "amount": "2 dl" },
+          { "name": "Lime", "amount": "Saften af 1" },
+          { "name": "Husblas", "amount": "3 blade" }
+        ]
+      },
+      {
+        "name": "Pynt",
+        "ingredients": [
+          { "name": "Fløde", "amount": "1 dl" },
+          { "name": "Blåbær", "amount": "En håndfuld" }
+        ]
+      }
+    ],
+    "procedure_steps": [
+      {
+        "name": "Kiksebund",
+        "steps": [
+          "Smelt smørret",
+          "Knus kiks og bland med smeltet smør",
+          "Tryk ned i bunden af springformen og sæt på køl"
+        ]
+      },
+      {
+        "name": "Blåbær Sylt",
+        "steps": [
+          "Kog sammen i en gryde",
+          "Sæt 2 dl til side til gelé"
+        ]
+      },
+      {
+        "name": "Flødeostecreme",
+        "steps": [
+          "Sæt husblas i blød i koldt vand",
+          "Pisk fløde til blødt flødeskum",
+          "Vend sukker, vanilje, og limeskal i flødeosten",
+          "Varm limesaft og smelt husblas heri",
+          "Bland limesaft i flødeostecremen",
+          "Vend flødeskum i flødeostecremen lidt ad gangen",
+          "Hæld massen oven på kiksebunden og fordel blåbærsylt i og rør kort rundt.",
+          "Lad sætte sig på køl inden der hældes gelé over"
+        ]
+      },{
+        "name": "Blåbær Gelé",
+        "steps": [
+          "Sæt husblas i blød i koldt vand",
+          "Si det resterende blåbærsylt og kog op sammen med limesaft",
+          "Smelt husblas deri og lad det køle lidt af",
+          "Fordel over cheesecaken og lad den stivne i køleskabet."
+        ]
+      }
+    ],
+    "quick_info": [
+      "22cm springform",
+      "No bake"
+    ],
+    "ingredient_tags": [
+      { "_id": 3, "name": "Blåbær" },
+      { "_id": 9, "name": "Flødeost" },
+      { "_id": 21, "name": "Lime" }
+    ],
+    "diet_type_tags": [],
+    "created_at": "04-02-2025",
+    "last_edited_at": "04-02-2025"
+  },
+  {
+    "_id": "11",
+    "title": "Gulerodskage",
+    "category": {
+        "_id": 5,
+        "name": "Skærekager"
+    },
+    "image_src": "gulerodskage.jpg",
+    "ingredient_groups": [
+        {
+            "name": "Gulerodskage",
+            "ingredients": [
+                { "name": "Smør", "amount": "225 g" },
+                { "name": "Sukker", "amount": "150 g" },
+                { "name": "Brun farin", "amount": "150 g" },
+                { "name": "Sirup", "amount": "1 spsk" },
+                { "name": "Æg", "amount": "6 stk" },
+                { "name": "Hvedemel", "amount": "300 g" },
+                { "name": "Bagepulver", "amount": "2 tsk" },
+                { "name": "Natron", "amount": "1 tsk" },
+                { "name": "Kanel", "amount": "1 spsk" },
+                { "name": "Nelliker", "amount": "1 knsp" },
+                { "name": "Ingefær", "amount": "1 tsk" },
+                { "name": "Kardemomme", "amount": "1 tsk" },
+                { "name": "Salt", "amount": "1 tsk" },
+                { "name": "Revet gulerod", "amount": "400 g" },
+                { "name": "Rosiner", "amount": "75 g" },
+                { "name": "Dadler", "amount": "125 g" },
+                { "name": "Valnødder", "amount": "80 g" },
+                { "name": "Abrikos", "amount": "75 g" },
+                { "name": "Abrikosmarmelade", "amount": "Lidt" }
+            ]
+        },
+        {
+            "name": "Frosting",
+            "ingredients": [
+                { "name": "Smør", "amount": "250 g" },
+                { "name": "Vand", "amount": "50 ml" },
+                { "name": "Sukker", "amount": "200 ml" },
+                { "name": "Past. æggehvider", "amount": "4 stk" },
+                { "name": "Vaniljesukker", "amount": "1 tsk" },
+                { "name": "Citronsaft", "amount": "3 spsk" },
+                { "name": "Flødeost", "amount": "300 g" }
+            ]
+        },
+        {
+            "name": "Marcipanpynt",
+            "ingredients": [
+                { "name": "Marcipan", "amount": "200 g" },
+                { "name": "Flormelis", "amount": "90 g" },
+                { "name": "Glukosesirup", "amount": "20 g" }
+            ]
+        }
+    ],
+    "procedure_steps": [
+        {
+            "name": "Gulerodskage",
+            "steps": [
+                "Pisk smør og sukker sammen.",
+                "Pisk æggene i et ad gangen.",
+                "Bland de tørre ingredienser og vend dem i dejen.",
+                "Vend til sidst gulerod, frugt og nødder i.",
+                "Hæld dejen i en form og bag ved 200°C i ca. 40 min."
+            ]
+        },
+        {
+            "name": "Frosting",
+            "steps": [
+                "Lav en italiensk meringue frosting",
+                "Opvarm sukker og vand til 118 grader.",
+                "Pisk æggehvider stift",
+                "Tilsæt sukkersirup og pisk til en sej marengs.",
+                "Tilsæt smør lidt ad gangen, og pisk til en glat creme.",
+                "Rør vaniljesukker og citronsaft i.",
+                "Til sidst røres flødeosten i."
+            ]
+        },
+        {
+            "name": "Marcipanpynt",
+            "steps": [
+                "Bland marcipan, flormelis og glukosesirup.",
+                "Indfarv i orange, lys grøn, mørk grøn og rød.",
+                "Form gulerødder og kristtjørn."
+            ]
+        },
+        {
+            "name": "Samling",
+            "steps": [
+                "Skær gulerodskagen over på midten",
+                "Smør med abrikosmamelade og fyld med lidt frosting i midten.",
+                "Saml kagen og smør flot op med frosting.",
+                "Pynt med gulerødder og kristtjørn."
+            ]
+        }
+    ],
+    "quick_info": [
+        "200°C",
+        "ca. 40 min"
+    ],
+    "ingredient_tags": [
+        { "_id": 11, "name": "Gulerod" },
+        { "_id": 9, "name": "Flødeost" },
+        {"_id": 7, "name": "Dadler"},
+        {"_id": 32, "name": "Rosiner"},
+        {"_id": 38, "name": "Valnødder"},
+        {"_id": 16, "name": "Kanel"}
+    ],
+    "diet_type_tags": [],
+    "created_at": "18-02-2025",
+    "last_edited_at": "18-02-2025"
+},
+{
+  "_id": "12",
+  "title": "Mandel Karamel Småkager",
+  "category": {
+  "_id": 3,
+  "name": "Småkager"
+  },
+  "image_src": "smaakager.jpg",
+  "ingredient_groups": [
+  {
+  "name": "Småkagedej",
+  "ingredients": [
+  { "name": "Smør", "amount": "150 g" },
+  { "name": "Sukker", "amount": "100 g" },
+  { "name": "Brun farin", "amount": "50 g" },
+  { "name": "Æg", "amount": "1" },
+  { "name": "Hvedemel", "amount": "200 g" },
+  { "name": "Bagepulver", "amount": "1 tsk" },
+  { "name": "Afskallede Mandler", "amount": "100 g" },
+  { "name": "Salt", "amount": "1 knsp" }
+  ]
+  },
+  {
+  "name": "Overtræk",
+  "ingredients": [
+  { "name": "Karamel chokolade", "amount": "200 g" },
+  { "name": "Frysetørret hindbær", "amount": "Til drys" }
+  ]
   }
+  ],
+  "procedure_steps": [
+  {
+  "name": "Småkagedej",
+  "steps": [
+  "Blend mandler fint.",
+  "Pisk smør, sukker og brun farin sammen.",
+  "Tilsæt æg og pisk det godt ind.",
+  "Bland mel, mandelmel bagepulver og salt, og rør det i dejen.",
+  "Rul ud og udstik til små runde kager",
+  "Bag ved 180°C i ca. 8-10 min til gyldne.",
+  "Lad småkagerne køle helt af."
+  ]
+  },
+  {
+  "name": "Overtræk og pynt",
+  "steps": [
+  "Smelt karamel chokoladen",
+  "Dyp hver småkage i chokoladen eller pensl den på.",
+  "Drys med frysetørret hindbær, mens chokoladen stadig er våd.",
+  "Lad chokoladen sætte sig helt, inden småkagerne nydes."
+  ]
+  }
+  ],
+  "quick_info": [
+  "Ca. 20 stk",
+  "180°C"
+  ],
+  "ingredient_tags": [
+  { "_id": 23, "name": "Mandler" },
+  { "_id": 13, "name": "Hindbær" },
+  { "_id": 17, "name": "Karamel" }
+  ],
+  "diet_type_tags": [],
+  "created_at": "18-02-2025",
+  "last_edited_at": "18-02-2025"
+  }
+  
+  
  
 ]
