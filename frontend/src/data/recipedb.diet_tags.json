@@ -1,0 +1,18 @@
+[{
+  "_id": {
+    "$oid": "67b5fa09a545fde33c85a8ef"
+  },
+  "name": "Laktosefri"
+},
+{
+  "_id": {
+    "$oid": "67b5fa22a545fde33c85a8f0"
+  },
+  "name": "Vegan"
+},
+{
+  "_id": {
+    "$oid": "67b5fa3aa545fde33c85a8f1"
+  },
+  "name": "Uden sukker"
+}]

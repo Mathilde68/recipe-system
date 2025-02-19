@@ -1,6 +1,7 @@
 import { Grid, GridItem } from '@chakra-ui/react';
 import { Outlet } from 'react-router-dom';
 import NavBar from '../components/NavBar';
+import { ScrollRestoration } from "react-router-dom";
 
 
 
@@ -20,6 +21,8 @@ const DefaultLayout = () => {
       
 
       <GridItem mt={{base: "4rem", lg:0}} area="main">
+        {/* Makes sure that it resets scroll position */}
+        <ScrollRestoration /> 
         <Outlet />
       </GridItem>
     </Grid>

@@ -9,6 +9,7 @@ import { FaSearch } from "react-icons/fa";
 
 import { useState, useRef } from "react";
 import { useColorMode } from "@chakra-ui/react";
+import { useSearchParams } from "react-router-dom";
 
 import useRecipes from "../hooks/useRecipes";
 import RecipeCard from "./recipeCard";
@@ -26,14 +27,23 @@ const RecipeList = ({
   selectedDiet,
 }: RecipeListProps) => {
   const recipes = useRecipes();
-  const [searchQuery, setSearchQuery] = useState("");
+
   const { colorMode } = useColorMode();
   const inputRef = useRef<HTMLInputElement>(null);
 
+  const [searchParams, setSearchParams] = useSearchParams(); 
+  const searchQuery = searchParams.get("search") || ""; 
+
   // Handler for seacrh input, detects changes in inputfield and sets the searchQuery
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchQuery(e.target.value);
+    searchParams.set("search", e.target.value);
+    setSearchParams(searchParams);
   };
+
+
+ 
+
+
 
   // Handler for filtering recipes based on selected category, diet and ingredients
   //makes sure that multiple ingredients can be selected
@@ -93,10 +103,8 @@ const RecipeList = ({
           color={colorMode === "dark" ? "peachbrown.100" : "rosebrown.500"}
           placeholder="Søg i opskrifter..."
           ref={inputRef}
-          value={searchQuery}
-          onChange={(e) => {
-            setSearchQuery(e.target.value);
-          }}
+          value={searchQuery} 
+          onChange={handleSearchChange} 
           mb={5}
         />
       </InputGroup>

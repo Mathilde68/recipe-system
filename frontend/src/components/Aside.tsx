@@ -1,4 +1,4 @@
-import { GridItem, useColorMode } from "@chakra-ui/react";
+import { GridItem, useColorMode,Box } from "@chakra-ui/react";
 
 import CategoryList from "./CategoryList";
 import IngredientList from "./IngredientList";
@@ -36,12 +36,13 @@ const Aside = ({
       minHeight={"100vh"}
       height={"100%"}
       position={{ base: "fixed", lg: "static" }} 
-      top={"0"}
+      top={0}
       pt={{ base: "4rem", lg: "0" }}
-      left={isOpen ? 0 : "-100%"} 
+      left={{base: isOpen ? 0 : "-100%", lg: 0}} 
       zIndex={2}
     >
-      <CategoryList
+      <Box position={{ base: "static", lg: "sticky" }} top={0} pt={1}>
+      <CategoryList  
         onSelectCategory={onSelectCategory}
         selectedCategory={selectedCategory}
       />
@@ -53,6 +54,7 @@ const Aside = ({
       />
 
       <DietList onSelectDiet={onSelectDiet} selectedDiet={selectedDiet} />
+      </Box>
     </GridItem>
   );
 };

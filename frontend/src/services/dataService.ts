@@ -1,5 +1,5 @@
 
-import recipesData from '../data/recipes.json';
+import recipesData from '../data/recipedb.recipes.json';
 
 export const fetchRecipes = () => {
 
@@ -7,21 +7,21 @@ export const fetchRecipes = () => {
 };
 
 
-import categoryData from '../data/categories.json';
+import categoryData from '../data/recipedb.categories.json';
 
 export const fetchCategories = () => {
 
   return Promise.resolve(categoryData);
 };
 
-import ingredientData from '../data/ingredient_tags.json';
+import ingredientData from '../data/recipedb.ingredient_tags.json';
 
 export const fetchIngredients = () => {
 
   return Promise.resolve(ingredientData);
 };
 
-import dietData from '../data/diet_tags.json';
+import dietData from '../data/recipedb.diet_tags.json';
 
 export const fetchDiets = () => {
 

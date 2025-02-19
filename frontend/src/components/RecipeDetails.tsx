@@ -113,7 +113,7 @@ const RecipeDetails = () => {
             gap={4}
           >
             {recipe.quick_info.map((info) => (
-              <Text
+              <Text key={info}
                 fontSize={{ base: "sm", md: "md" }}
                 color={
                   colorMode === "dark" ? "peachbrown.400" : "rosebrown.500"
@@ -180,7 +180,7 @@ const RecipeDetails = () => {
             <Text fontSize={"1.1rem"} fontWeight="bold">
               Kategori
             </Text>
-            <Text
+            <Text key={recipe.category.name}
               color={colorMode === "dark" ? "peachbrown.400" : "rosebrown.500"}
             >
               {recipe.category.name}
@@ -251,7 +251,7 @@ const RecipeDetails = () => {
                 </Text>
                 <VStack align="start" spacing={2}>
                   {step.steps.map((step) => (
-                    <Text
+                    <Text key={step}
                       color={
                         colorMode === "dark" ? "palecream.500" : "darkbrown.500"
                       }

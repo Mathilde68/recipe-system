@@ -1,0 +1,240 @@
+[{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b50c"
+  },
+  "name": "Appelsin"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b50d"
+  },
+  "name": "Banan"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b50e"
+  },
+  "name": "Blåbær"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b50f"
+  },
+  "name": "Brombær"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b510"
+  },
+  "name": "Chokolade"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b511"
+  },
+  "name": "Citron"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b512"
+  },
+  "name": "Dadler"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b513"
+  },
+  "name": "Fersken"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b514"
+  },
+  "name": "Flødeost"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b515"
+  },
+  "name": "Granatæble"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b516"
+  },
+  "name": "Gulerod"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b517"
+  },
+  "name": "Hasselnødder"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b518"
+  },
+  "name": "Hindbær"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b519"
+  },
+  "name": "Jordbær"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b51a"
+  },
+  "name": "Kaffe"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b51b"
+  },
+  "name": "Kanel"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b51c"
+  },
+  "name": "Karamel"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b51d"
+  },
+  "name": "Kirsebær"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b51e"
+  },
+  "name": "Kokos"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b51f"
+  },
+  "name": "Lakrids"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b520"
+  },
+  "name": "Lime"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b521"
+  },
+  "name": "Mango"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b522"
+  },
+  "name": "Mandler"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b523"
+  },
+  "name": "Marcipan"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b524"
+  },
+  "name": "Nougat"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b525"
+  },
+  "name": "Passionsfrugt"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b526"
+  },
+  "name": "Peanuts"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b527"
+  },
+  "name": "Pistacie"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b528"
+  },
+  "name": "Pære"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b529"
+  },
+  "name": "Rose"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b52a"
+  },
+  "name": "Ribs"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b52b"
+  },
+  "name": "Rosiner"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b52c"
+  },
+  "name": "Safran"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b52d"
+  },
+  "name": "Skovbær"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b52e"
+  },
+  "name": "Solbær"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b52f"
+  },
+  "name": "Squash"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b530"
+  },
+  "name": "Tranebær"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b531"
+  },
+  "name": "Valnødder"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b532"
+  },
+  "name": "Vindruer"
+},
+{
+  "_id": {
+    "$oid": "67b5f932b07cfb6a1e56b533"
+  },
+  "name": "Æble"
+}]

@@ -74,9 +74,8 @@
   "ingredient_tags": [
     { "_id": 5, "name": "Chokolade" }
   ],
-  "diet_type_tags": [],
-  "created_at": "04-02-2025",
-  "last_edited_at": "04-02-2025"
+  "diet_type_tags": []
+   
 },
 {
   "_id": "2",
@@ -167,9 +166,7 @@
     { "_id": 24, "name": "Marcipan" },
     { "_id": 13, "name": "Hindbær" }
   ],
-  "diet_type_tags": [],
-  "created_at": "04-02-2025",
-  "last_edited_at": "04-02-2025"
+  "diet_type_tags": []
 },
   {
     "_id": "3",
@@ -225,9 +222,7 @@
         "name": "Chokolade"
       }
     ],
-    "diet_type_tags": [],
-    "created_at": "04-02-2025",
-    "last_edited_at": "04-02-2025"
+    "diet_type_tags": []
   },
   {
     "_id": "4",
@@ -318,9 +313,7 @@
       { "_id": 13, "name": "Hindbær" },
       { "_id": 24, "name": "Marcipan" }
     ],
-    "diet_type_tags": [],
-    "created_at": "04-02-2025",
-    "last_edited_at": "04-02-2025"
+    "diet_type_tags": []
   },
   {
     "_id": "5",
@@ -388,9 +381,7 @@
         "name": "Chokolade"
       }
     ],
-    "diet_type_tags": [],
-    "created_at": "04-02-2025",
-    "last_edited_at": "04-02-2025"
+    "diet_type_tags": []
   },
   {
     "_id": "6",
@@ -481,9 +472,7 @@
         "_id": 1,
         "name": "Laktose fri"
       }
-    ],
-    "created_at": "04-02-2025",
-    "last_edited_at": "04-02-2025"
+    ]  
   },
   {
     "_id": "7",
@@ -550,9 +539,7 @@
         "_id": 3,
         "name": "Uden sukker"
       }
-    ],
-    "created_at": "04-02-2025",
-    "last_edited_at": "04-02-2025"
+    ]
   },{
     "_id": "8",
     "title": "Påskeæg",
@@ -613,9 +600,7 @@
       { "_id": 13, "name": "Hindbær" },
       { "_id": 20, "name": "Lakrids" }
     ],
-    "diet_type_tags": [],
-    "created_at": "04-02-2025",
-    "last_edited_at": "04-02-2025"
+    "diet_type_tags": []
   },
   {
     "_id": "9",
@@ -684,9 +669,7 @@
       { "_id": 5, "name": "Chokolade" },
       { "_id": 24, "name": "Marcipan" }
     ],
-    "diet_type_tags": [],
-    "created_at": "04-02-2025",
-    "last_edited_at": "04-02-2025"
+    "diet_type_tags": []
   },
   {
     "_id": "10",
@@ -785,9 +768,7 @@
       { "_id": 9, "name": "Flødeost" },
       { "_id": 21, "name": "Lime" }
     ],
-    "diet_type_tags": [],
-    "created_at": "04-02-2025",
-    "last_edited_at": "04-02-2025"
+    "diet_type_tags": []
   },
   {
     "_id": "11",
@@ -896,9 +877,7 @@
         {"_id": 38, "name": "Valnødder"},
         {"_id": 16, "name": "Kanel"}
     ],
-    "diet_type_tags": [],
-    "created_at": "18-02-2025",
-    "last_edited_at": "18-02-2025"
+    "diet_type_tags": [] 
 },
 {
   "_id": "12",
@@ -962,9 +941,8 @@
   { "_id": 13, "name": "Hindbær" },
   { "_id": 17, "name": "Karamel" }
   ],
-  "diet_type_tags": [],
-  "created_at": "18-02-2025",
-  "last_edited_at": "18-02-2025"
+  "diet_type_tags": []
+  
   }
   
   

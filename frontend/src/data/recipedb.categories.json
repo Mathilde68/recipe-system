@@ -1,0 +1,90 @@
+[{
+  "_id": {
+    "$oid": "67b5fca4b50244f85df08891"
+  },
+  "name": "Tærter"
+},
+{
+  "_id": {
+    "$oid": "67b5fca4b50244f85df08892"
+  },
+  "name": "Cookies"
+},
+{
+  "_id": {
+    "$oid": "67b5fca4b50244f85df08893"
+  },
+  "name": "Småkager"
+},
+{
+  "_id": {
+    "$oid": "67b5fca4b50244f85df08894"
+  },
+  "name": "Dessert"
+},
+{
+  "_id": {
+    "$oid": "67b5fca4b50244f85df08895"
+  },
+  "name": "Skærekage"
+},
+{
+  "_id": {
+    "$oid": "67b5fca4b50244f85df08896"
+  },
+  "name": "Muffins & Cupcakes"
+},
+{
+  "_id": {
+    "$oid": "67b5fca4b50244f85df08897"
+  },
+  "name": "Cheesecake"
+},
+{
+  "_id": {
+    "$oid": "67b5fca4b50244f85df08898"
+  },
+  "name": "Moussekager"
+},
+{
+  "_id": {
+    "$oid": "67b5fca4b50244f85df08899"
+  },
+  "name": "Flødekager"
+},
+{
+  "_id": {
+    "$oid": "67b5fca4b50244f85df0889a"
+  },
+  "name": "Smørcreme kager"
+},
+{
+  "_id": {
+    "$oid": "67b5fca4b50244f85df0889b"
+  },
+  "name": "Wienerbrød"
+},
+{
+  "_id": {
+    "$oid": "67b5fca4b50244f85df0889c"
+  },
+  "name": "Bløddej"
+},
+{
+  "_id": {
+    "$oid": "67b5fca4b50244f85df0889d"
+  },
+  "name": "Tørkager"
+},
+{
+  "_id": {
+    "$oid": "67b5fca4b50244f85df0889e"
+  },
+  "name": "Konfekt & Petit Fours"
+},
+{
+  "_id": {
+    "$oid": "67b5fca4b50244f85df0889f"
+  },
+  "name": "Andet"
+}]

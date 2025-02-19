@@ -11,7 +11,7 @@ const NavBar = () => {
       bg={"rosebrown.500"}
       color={"palecream.500"}
       zIndex={5}
-      position={{ base: "fixed", lg: "static" }}
+      position={{ base: "fixed", lg: "sticky" }}
       top={0}
       width="100%"
       justifyContent={"flex-end"}
