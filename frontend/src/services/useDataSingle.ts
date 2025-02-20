@@ -21,9 +21,8 @@ const useDataSingle = <T>(endpoint: string) => {
     };
 
     fetchData();
-  }, []); 
+  }, [endpoint]); 
 
   return { data, loading, error };
 };
-
 export default useDataSingle;

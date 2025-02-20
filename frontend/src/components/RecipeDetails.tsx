@@ -13,6 +13,7 @@ import {
   useColorMode,
 } from "@chakra-ui/react";
 import { IoReturnUpBack } from "react-icons/io5";
+import RecipeDetailsLoading from "./RecipeDetailsLoading";
 
 import useRecipe from "../hooks/useRecipe";
 import RecipeTag from "./RecipeTag";
@@ -28,19 +29,28 @@ const RecipeDetails = () => {
   const { recipe, loading, error } = useRecipe(id); // Destructure the returned object
 
 
-
-  /* renders a heading if the recipe is not found */
-  if (!recipe) {
+  if (error) {
     return (
-      <Heading py={"5rem"} textAlign={"center"}>
-        Recipe not found
+      <Heading py={"5rem"} textAlign={"center"} color="red.500">
+        Oopsie! Opskriften kunne ikke findes.
       </Heading>
     );
   }
-
-  const img_url = img_preurl + recipe.image_src;
-
+  
+  if (loading) {
+    return (
+     <RecipeDetailsLoading />
+    );
+  }
+  
+  if (recipe) {
+    
+    const img_url = img_preurl + recipe.image_src;
   return (
+
+
+   
+    
     <Card
       borderRadius="2xl"
       maxW="1000px"
@@ -266,7 +276,7 @@ const RecipeDetails = () => {
         </Box>
       </Flex>
     </Card>
-  );
+  ); };
 };
 
 export default RecipeDetails;

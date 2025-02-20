@@ -10,6 +10,7 @@ import { useColorMode } from "@chakra-ui/react";
 import useRecipes from "../hooks/useRecipes";
 import RecipeCard from "./recipeCard";
 import { Tag } from "../hooks/useRecipes";
+import RecipeCardSkeleton from "./recipeCardSkeleton";
 
 interface RecipeListProps {
   selectedCategory: string | null;
@@ -42,8 +43,32 @@ const RecipeList = ({
     return categoryMatch && ingredientMatch && dietMatch && searchMatch;
   });
 
+  if (error) {
+    return (
+      <Flex justify="center" align="center" height="100vh">
+        <Text fontSize="xl">Der skete en fejl.</Text>
+      </Flex>
+    );
+  }
 
- 
+
+
+  if (loading) {
+    return (
+     
+      <Flex wrap="wrap" justify="space-between" px={{ base: 5, md: 10 }}>
+      {[...Array(6)].map((_, index) => (
+     <RecipeCardSkeleton/>
+      ))}
+     </Flex>
+    
+    );
+   
+  }
+  
+
+
+ if (recipes) {
 
   return (
     <Flex direction="column" px={{ base: 5, md: 10 }} pb={10}>
@@ -61,6 +86,8 @@ const RecipeList = ({
       )}
     </Flex>
   );
+};
+
 };
 
 export default RecipeList;
