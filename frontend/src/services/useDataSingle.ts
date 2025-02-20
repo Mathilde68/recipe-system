@@ -21,7 +21,7 @@ const useDataSingle = <T>(endpoint: string) => {
     };
 
     fetchData();
-  }, [endpoint]); // Add endpoint as a dependency
+  }, []); 
 
   return { data, loading, error };
 };
