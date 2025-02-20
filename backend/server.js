@@ -12,7 +12,10 @@ const PORT = 3000;
 
 app.use(cors())
 app.use(express.json())
-app.use(recipes, categories, ingredients, diets)
+app.use(recipes)
+app.use(categories)
+app.use(ingredients)
+app.use(diets)
 
 
 app.listen(PORT, () => {
