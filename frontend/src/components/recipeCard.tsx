@@ -32,7 +32,7 @@ const RecipeCard = ({ recipe }: Props) => {
         borderRadius={"2xl"}
         boxShadow={"md"}
         as={ReactRouterLink}
-        to={`/recipe/${recipe._id}`}
+        to={`/${recipe._id}`}
       >
         <Card
           width="100%"

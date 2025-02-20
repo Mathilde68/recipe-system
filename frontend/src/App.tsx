@@ -21,7 +21,7 @@ const router = createBrowserRouter([
     element: <HomeLayout />,  // Uses HomeLayout for the home page
   },
   {
-    path: "/recipe/:id", // Path for recipe details
+    path: "/:id", // Path for recipe details
     element: <DefaultLayout />,  // Uses DefaultLayout for these pages
     children: [
       {
