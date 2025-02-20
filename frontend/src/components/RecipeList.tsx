@@ -12,7 +12,7 @@ import RecipeCard from "./recipeCard";
 import { Tag } from "../hooks/useRecipes";
 
 interface RecipeListProps {
-  selectedCategory: number | null;
+  selectedCategory: string | null;
   selectedIngredients: Tag[];
   selectedDiet: Tag | null;
   searchQuery: string; 
@@ -23,7 +23,7 @@ const RecipeList = ({
   selectedIngredients,
   selectedDiet,searchQuery
 }: RecipeListProps) => {
-  const recipes = useRecipes();
+  const { recipes, loading, error } = useRecipes(); // Destructure the returned object
 
 
 // Handler for filtering recipes based on selected category, diet and ingredients

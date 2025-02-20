@@ -2,8 +2,8 @@ import { Button, Flex, useColorMode, Heading } from "@chakra-ui/react";
 import useCategories, { Category } from "../hooks/useCategories";
 
 interface CategoryListProps {
-  onSelectCategory: (categoryId: number | null) => void;
-  selectedCategory: number | null;
+  onSelectCategory: (categoryId: string | null) => void;
+  selectedCategory: string| null;
 }
 
 const CategoryList = ({
@@ -11,7 +11,7 @@ const CategoryList = ({
   selectedCategory,
 }: CategoryListProps) => {
   const { colorMode } = useColorMode();
-  const categories = useCategories();
+  const {categories, loading, error } = useCategories();
 
   return (
     <Flex

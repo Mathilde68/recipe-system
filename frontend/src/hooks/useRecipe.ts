@@ -1,4 +1,4 @@
-import useData from '../services/useData';
+import useDataSingle from '../services/useDataSingle';
 
 interface Ingredient {
   name: string;
@@ -37,8 +37,8 @@ export interface Recipe {
   diet_type_tags: Tag[];
 }
 
-const useRecipes = () => {
-  const { data, loading, error } = useData<Recipe>('recipes');
-  return { recipes: data, loading, error };
+const useRecipe = (id: string) => {
+  const { data, loading, error } = useDataSingle<Recipe>(`recipes/${id}`);
+  return { recipe: data, loading, error };
 };
-export default useRecipes;
+export default useRecipe;

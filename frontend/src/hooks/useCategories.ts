@@ -1,27 +1,15 @@
-import useData from './useData';
-import { fetchCategories } from '../services/dataService';
+import useData from '../services/useData';
 
-export interface RawCategory {
-  _id: {
-    $oid: string;
-  };
-  name: string;
-}
 
-export interface FormattedCategory {
+
+export interface Category {
   _id: string;
   name: string;
 }
 
 const useCategories = () => {
-  const rawCategories = useData<RawCategory>(fetchCategories);
-
-  // Format the data in the hook
-  const formattedCategories = rawCategories.map((category) => ({
-    ...category,
-    _id: category._id.$oid,
-  }));
-  return formattedCategories;
+  const { data, loading, error } = useData<Category>('categories');
+  return { categories: data, loading, error };
 };
 
 export default useCategories;

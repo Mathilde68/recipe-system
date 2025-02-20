@@ -17,7 +17,7 @@ interface DietListProps {
 
 const DietList = ({ onSelectDiet, selectedDiet }: DietListProps) => {
   const { colorMode } = useColorMode();
-  const diets = useDiets();
+  const { diets, loading, error } = useDiets();
 
   return (
     <Box px={4}>

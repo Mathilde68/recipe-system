@@ -1,28 +1,16 @@
-import useData from './useData';
-import { fetchIngredients } from '../services/dataService';
+import useData from '../services/useData';
 
 
-interface RawIngredient {
-  _id: { $oid: string };
-  name: string;
-}
 
-
-export interface FormattedIngredient {
+export interface Ingredient {
   _id: string;
   name: string;
 }
 
 const useIngredients = () => {
-  const rawIngredients = useData<RawIngredient>(fetchIngredients);
 
- 
-  const formattedIngredients = rawIngredients.map((ingredient) => ({
-    ...ingredient,
-    _id: ingredient._id.$oid,
-  }));
-
-  return formattedIngredients;
+  const { data, loading, error } = useData<Ingredient>('ingredients');
+  return { ingredients: data, loading, error };
 };
 
 export default useIngredients;

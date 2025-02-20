@@ -20,7 +20,7 @@ const HomeLayout = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const inputRef = useRef<HTMLInputElement>(null);
 
-  const [selectedCategory, setSelectedCategory] = useState<number | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [selectedIngredients, setSelectedIngredients] = useState<Tag[]>([]);
   const [selectedDiet, setSelectedDiet] = useState<Tag | null>(null);
   const { isOpen, onToggle, onClose } = useDisclosure();
@@ -47,7 +47,7 @@ const HomeLayout = () => {
       const diet = searchParams.get("diet");
       
   
-      if (category) setSelectedCategory(Number(category));
+      if (category) setSelectedCategory(category);
       if (ingredients) setSelectedIngredients(JSON.parse(ingredients));
       if (diet) setSelectedDiet(JSON.parse(diet));
     }, []);
@@ -57,7 +57,7 @@ const HomeLayout = () => {
       const newParams = new URLSearchParams();
   
       if (searchQuery) newParams.set("search", searchQuery);
-      if (selectedCategory) newParams.set("category", selectedCategory.toString());
+      if (selectedCategory) newParams.set("category", selectedCategory);
       if (selectedIngredients.length > 0) newParams.set("ingredients", JSON.stringify(selectedIngredients));
       if (selectedDiet) newParams.set("diet", JSON.stringify(selectedDiet));
   

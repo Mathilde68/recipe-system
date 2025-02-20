@@ -14,7 +14,7 @@ import {
 } from "@chakra-ui/react";
 import { IoReturnUpBack } from "react-icons/io5";
 
-import useRecipes from "../hooks/useRecipes";
+import useRecipe from "../hooks/useRecipe";
 import RecipeTag from "./RecipeTag";
 
 const img_preurl = "/src/img/";
@@ -23,10 +23,10 @@ const RecipeDetails = () => {
   const navigate = useNavigate();
   const { colorMode } = useColorMode();
 
-  const { id } = useParams<{ id: string }>();
+  const { id = "" } = useParams<{ id: string }>();
 
-  const recipes = useRecipes();
-  const recipe = recipes.find((recipe) => recipe._id === id);
+  const { recipe, loading, error } = useRecipe(id); // Destructure the returned object
+
 
 
   /* renders a heading if the recipe is not found */

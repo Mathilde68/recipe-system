@@ -6,8 +6,8 @@ import DietList from "./DietList";
 import { Tag } from "../hooks/useRecipes";
 
 interface AsideProps {
-  onSelectCategory: (categoryId: number | null) => void;
-  selectedCategory: number | null;
+  onSelectCategory: (categoryId: string | null) => void;
+  selectedCategory: string | null;
   onSelectIngredient: (ingredient: Tag) => void;
   onClearIngredients: () => void;
   selectedIngredients: Tag[];
