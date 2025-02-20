@@ -1,4 +1,5 @@
 import {
+  Box,
   Flex,
   Text,
  
@@ -58,7 +59,9 @@ const RecipeList = ({
      
       <Flex wrap="wrap" justify="space-between" px={{ base: 5, md: 10 }}>
       {[...Array(6)].map((_, index) => (
-     <RecipeCardSkeleton/>
+        <Box key={index}>
+        <RecipeCardSkeleton/>
+        </Box>
       ))}
      </Flex>
     
