@@ -30,17 +30,17 @@ const RecipeDetails = () => {
 
 
   if (error) {
-    
+    return (
       <Heading py={"5rem"} textAlign={"center"} color="red.500">
         Oopsie! Der skete en fejl.
       </Heading>
-    
+    );
   }
   
   if (loading) {
-   
+    return (
      <RecipeDetailsLoading />
-    
+    );
   }
 
   if (!recipe) {
