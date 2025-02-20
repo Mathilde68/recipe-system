@@ -39,6 +39,7 @@ export interface Recipe {
 
 const useRecipe = (id: string) => {
   const { data, loading, error } = useDataSingle<Recipe>(`recipes/${id}`);
+  console.log(data);
   return { recipe: data, loading, error };
 };
 export default useRecipe;

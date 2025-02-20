@@ -30,22 +30,23 @@ const RecipeDetails = () => {
 
 
   if (error) {
-    return (
+    
       <Heading py={"5rem"} textAlign={"center"} color="red.500">
         Oopsie! Opskriften kunne ikke findes.
       </Heading>
-    );
+    
   }
   
   if (loading) {
-    return (
+   
      <RecipeDetailsLoading />
-    );
+    
   }
   
-  if (recipe) {
-    
+ if (recipe) {
+  
     const img_url = img_preurl + recipe.image_src;
+  
   return (
 
 
@@ -276,7 +277,7 @@ const RecipeDetails = () => {
         </Box>
       </Flex>
     </Card>
-  ); };
-};
+  ); };};
+
 
 export default RecipeDetails;
