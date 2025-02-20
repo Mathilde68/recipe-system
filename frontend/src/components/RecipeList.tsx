@@ -65,14 +65,8 @@ const RecipeList = ({
       ))}
      </Flex>
     
-    
-   
   }
   
-
-
- if (recipes) {
-
   return (
     <Flex direction="column" px={{ base: 5, md: 10 }} pb={10}>
       
@@ -91,6 +85,6 @@ const RecipeList = ({
   );
 };
 
-};
+
 
 export default RecipeList;
