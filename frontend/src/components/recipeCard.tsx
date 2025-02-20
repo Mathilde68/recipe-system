@@ -19,7 +19,7 @@ interface Props {
   recipe: Recipe;
 }
 
-const img_preurl = "../src/img/";
+const img_preurl = "./img/";
 
 const RecipeCard = ({ recipe }: Props) => {
   const { colorMode } = useColorMode();

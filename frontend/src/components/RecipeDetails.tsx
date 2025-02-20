@@ -17,7 +17,7 @@ import { IoReturnUpBack } from "react-icons/io5";
 import useRecipe from "../hooks/useRecipe";
 import RecipeTag from "./RecipeTag";
 
-const img_preurl = "/src/img/";
+const img_preurl = "./img/";
 
 const RecipeDetails = () => {
   const navigate = useNavigate();
