@@ -31,7 +31,7 @@ const RecipeDetails = () => {
 
   if (error) {
     return (
-      <Heading py={"5rem"} textAlign={"center"} color="red.500">
+      <Heading py={"5rem"} textAlign={"center"} >
         Oopsie! Der skete en fejl.
       </Heading>
     );
@@ -45,7 +45,7 @@ const RecipeDetails = () => {
 
   if (!recipe) {
     return (
-      <Heading py={"5rem"} textAlign={"center"} color="red.500">
+      <Heading py={"5rem"} textAlign={"center"}>
         Oopsie! Opskriften kunne ikke findes.
       </Heading>
     );

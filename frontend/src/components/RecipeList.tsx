@@ -45,17 +45,17 @@ const RecipeList = ({
   });
 
   if (error) {
-   
+    return (
       <Flex justify="center" align="center" height="100vh">
         <Text fontSize="xl">Der skete en fejl.</Text>
       </Flex>
-    
+    );
   }
 
 
 
   if (loading) {
-    
+    return (
      
       <Flex wrap="wrap" justify="space-between" px={{ base: 5, md: 10 }}>
       {[...Array(6)].map((_, index) => (
@@ -64,7 +64,7 @@ const RecipeList = ({
         </Box>
       ))}
      </Flex>
-    
+    );
   }
   
   return (
