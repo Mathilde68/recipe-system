@@ -28,19 +28,16 @@ const RecipeDetails = () => {
 
   const { recipe, loading, error } = useRecipe(id); // Destructure the returned object
 
-
   if (error) {
     return (
-      <Heading py={"5rem"} textAlign={"center"} >
+      <Heading py={"5rem"} textAlign={"center"}>
         Oopsie! Der skete en fejl.
       </Heading>
     );
   }
-  
+
   if (loading) {
-    return (
-     <RecipeDetailsLoading />
-    );
+    return <RecipeDetailsLoading />;
   }
 
   if (!recipe) {
@@ -50,17 +47,13 @@ const RecipeDetails = () => {
       </Heading>
     );
   }
-    const img_url = img_preurl + recipe.image_src;
-  
+  const img_url = img_preurl + recipe.image_src;
+
   return (
-
-
-   
-    
     <Card
       borderRadius="2xl"
       maxW="1000px"
-      mx={{ base: "2rem", md: "3rem", lg: "auto" }}
+      mx={{ base: "1rem", md: "3rem", lg: "auto" }}
       my={10}
       boxShadow={"lg"}
       bg={colorMode === "dark" ? "darkbrown.500" : "creamwhite.500"}
@@ -129,7 +122,8 @@ const RecipeDetails = () => {
             gap={4}
           >
             {recipe.quick_info.map((info) => (
-              <Text key={info}
+              <Text
+                key={info}
                 fontSize={{ base: "sm", md: "md" }}
                 color={
                   colorMode === "dark" ? "peachbrown.400" : "rosebrown.500"
@@ -148,7 +142,7 @@ const RecipeDetails = () => {
         direction={{ base: "column", md: "row" }}
       >
         <VStack
-          fontSize="sm"
+          fontSize="1rem"
           width={{ base: "100%", md: "30%" }}
           align="start"
           px={{ base: 6, md: 8 }}
@@ -196,7 +190,8 @@ const RecipeDetails = () => {
             <Text fontSize={"1.1rem"} fontWeight="bold">
               Kategori
             </Text>
-            <Text key={recipe.category.name}
+            <Text
+              key={recipe.category.name}
               color={colorMode === "dark" ? "peachbrown.400" : "rosebrown.500"}
             >
               {recipe.category.name}
@@ -267,7 +262,8 @@ const RecipeDetails = () => {
                 </Text>
                 <VStack align="start" spacing={2}>
                   {step.steps.map((step) => (
-                    <Text key={step}
+                    <Text
+                      key={step}
                       color={
                         colorMode === "dark" ? "palecream.500" : "darkbrown.500"
                       }
@@ -282,7 +278,7 @@ const RecipeDetails = () => {
         </Box>
       </Flex>
     </Card>
-  ); };
-
+  );
+};
 
 export default RecipeDetails;

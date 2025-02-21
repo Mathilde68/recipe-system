@@ -14,7 +14,7 @@ const RecipeCardSkeleton = () => {
         flexDirection="column"
         bg={colorMode === "dark" ? "darkbrown.500" : "creamwhite.500"}
       >
-        <Skeleton height="220px" borderTopRadius="2xl" speed={2}/>
+        <Skeleton height="220px" borderTopRadius="2xl" speed={2} />
         <CardBody
           w="100%"
           height={"155px"}
@@ -30,8 +30,8 @@ const RecipeCardSkeleton = () => {
              <SkeletonText noOfLines={1} width="20%" speed={2}/>
             </Stack>
             <Stack direction="row" mt={4} flexWrap={"wrap"} pb={2}>
-            <Skeleton height="22px" width="70px" borderRadius="md" speed={2}/>
-            <Skeleton height="22px" width="70px" borderRadius="md" speed={2}/>
+            <Skeleton height="23px" width="70px" borderRadius="md" speed={2}/>
+            <Skeleton height="23px" width="70px" borderRadius="md" speed={2}/>
             </Stack>
         </CardBody>
       </Card>

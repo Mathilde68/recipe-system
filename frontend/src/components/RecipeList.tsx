@@ -58,11 +58,12 @@ const RecipeList = ({
     return (
      
       <Flex wrap="wrap" justify="space-between" px={{ base: 5, md: 10 }}>
-      {[...Array(6)].map((_, index) => (
-        <Box key={index} width={"100%"}>
+        <RecipeCardSkeleton />
         <RecipeCardSkeleton/>
-        </Box>
-      ))}
+        <RecipeCardSkeleton/>
+        <RecipeCardSkeleton/>
+        <RecipeCardSkeleton/>
+        <RecipeCardSkeleton/>
      </Flex>
     );
   }
