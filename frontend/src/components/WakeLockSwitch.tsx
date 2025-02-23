@@ -34,7 +34,7 @@ const WakeLockSwitch = () => {
     }
     setIsWakeLockEnabled(!isWakeLockEnabled); 
   };
-
+ 
  
  return (
     <Flex
