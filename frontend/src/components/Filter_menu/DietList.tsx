@@ -6,9 +6,9 @@ import {
   Box,
   Text,
 } from "@chakra-ui/react";
-import RecipeTag from "./RecipeTag";
-import useDiets from "../hooks/useDiets";
-import { Tag } from "../hooks/useRecipes";
+import RecipeTag from "../RecipeTag";
+import useDiets from "../../hooks/useDiets";
+import { Tag } from "../../hooks/useRecipes";
 
 interface DietListProps {
   onSelectDiet: (diet: Tag | null) => void; 

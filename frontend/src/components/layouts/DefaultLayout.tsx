@@ -1,6 +1,6 @@
 import { Grid, GridItem } from '@chakra-ui/react';
 import { Outlet } from 'react-router-dom';
-import NavBar from '../components/NavBar';
+import NavBar from '../NavBar';
 import { ScrollRestoration } from "react-router-dom";
 
 

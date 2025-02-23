@@ -13,9 +13,9 @@ import {
 } from "@chakra-ui/react";
 import { FaChevronDown } from "react-icons/fa";
 
-import useIngredients from "../hooks/useIngredients";
-import RecipeTag from "./RecipeTag";
-import { Tag } from "../hooks/useRecipes";
+import useIngredients from "../../hooks/useIngredients";
+import RecipeTag from "../RecipeTag";
+import { Tag } from "../../hooks/useRecipes";
 import {  useState, useRef } from "react";
 
 interface IngredientListProps {

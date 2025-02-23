@@ -9,12 +9,12 @@ import {
   useBreakpointValue,useColorMode
 } from "@chakra-ui/react";
 
-import NavBar from "../components/NavBar";
-import Aside from "../components/Aside";
-import RecipeList from "../components/RecipeList";
-import AsideToggleButton from "../components/AsideToggleButton";
-import { Tag } from "../hooks/useRecipes";
-import SearchInput from "../components/SearchInput";
+import NavBar from "../NavBar";
+import Aside from "../Filter_menu/Aside";
+import RecipeList from "../RecipeListComps/RecipeList";
+import AsideToggleButton from "../AsideToggleButton";
+import { Tag } from  "../../hooks/useRecipes";
+import SearchInput from "../SearchInput";
 
 const HomeLayout = () => {
   const [searchParams, setSearchParams] = useSearchParams();

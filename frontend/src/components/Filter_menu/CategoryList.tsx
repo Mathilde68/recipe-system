@@ -1,5 +1,5 @@
 import { Button, Flex, useColorMode, Heading, SkeletonText } from "@chakra-ui/react";
-import useCategories, { Category } from "../hooks/useCategories";
+import useCategories, { Category } from "../../hooks/useCategories";
 
 interface CategoryListProps {
   onSelectCategory: (categoryId: string | null) => void;
@@ -26,7 +26,7 @@ const CategoryList = ({
       <Heading fontSize={"xl"} px={5}>
         Kategorier
       </Heading>
-      <SkeletonText px={5} noOfLines={16} width="50%"  spacing={{base:5, lg: 9}} speed={2} />
+      <SkeletonText px={5} noOfLines={16} width="50%"  spacing={{base:5, lg: 6}} speed={2} />
      </Flex>
     );
   }

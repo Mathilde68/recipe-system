@@ -3,7 +3,7 @@ import { GridItem, useColorMode,Box } from "@chakra-ui/react";
 import CategoryList from "./CategoryList";
 import IngredientList from "./IngredientList";
 import DietList from "./DietList";
-import { Tag } from "../hooks/useRecipes";
+import { Tag } from "../../hooks/useRecipes";
 
 interface AsideProps {
   onSelectCategory: (categoryId: string | null) => void;

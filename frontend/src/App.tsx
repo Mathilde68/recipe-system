@@ -8,9 +8,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 
 
-import RecipeDetails from "./components/RecipeDetails";
-import HomeLayout from "./layouts/HomeLayout";
-import DefaultLayout from "./layouts/DefaultLayout";
+import RecipeDetails from "./components/RecipeDetailsComps/RecipeDetails";
+import HomeLayout from "./components/layouts/HomeLayout";
+import DefaultLayout from "./components/layouts/DefaultLayout";
 
 
 

@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { IoReturnUpBack } from "react-icons/io5";
 
-const RecipeDetailsLoading = () => {
+const RecipeDetailsSkeleton = () => {
   const { colorMode } = useColorMode();
 
   return (
@@ -126,4 +126,4 @@ const RecipeDetailsLoading = () => {
   );
 };
 
-export default RecipeDetailsLoading;
+export default RecipeDetailsSkeleton;

@@ -12,8 +12,8 @@ import { Link } from "react-router-dom";
 import { Link as ReactRouterLink } from "react-router-dom";
 import { Link as ChakraLink, LinkProps } from "@chakra-ui/react";
 
-import { Recipe } from "../hooks/useRecipes";
-import RecipeTag from "./RecipeTag";
+import { Recipe } from "../../hooks/useRecipes";
+import RecipeTag from "../RecipeTag";
 
 interface Props {
   recipe: Recipe;

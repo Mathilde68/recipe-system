@@ -8,9 +8,9 @@ import {
 import { useColorMode } from "@chakra-ui/react";
 
 
-import useRecipes from "../hooks/useRecipes";
+import useRecipes from "../../hooks/useRecipes";
 import RecipeCard from "./recipeCard";
-import { Tag } from "../hooks/useRecipes";
+import { Tag } from "../../hooks/useRecipes";
 import RecipeCardSkeleton from "./recipeCardSkeleton";
 
 interface RecipeListProps {

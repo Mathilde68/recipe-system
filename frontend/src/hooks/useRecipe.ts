@@ -5,17 +5,17 @@ interface Ingredient {
   amount: string;
 }
 
-interface IngredientGroup {
+export interface IngredientGroup {
   name: string;
   ingredients: Ingredient[];
 }
 
-interface ProcedureStep {
+export interface ProcedureStep {
   name: string;
   steps: string[];
 }
 
-interface Category {
+export interface Category {
   _id: string;
   name: string;
 }
