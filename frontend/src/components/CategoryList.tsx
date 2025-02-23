@@ -1,4 +1,4 @@
-import { Button, Flex, useColorMode, Heading } from "@chakra-ui/react";
+import { Button, Flex, useColorMode, Heading, SkeletonText } from "@chakra-ui/react";
 import useCategories, { Category } from "../hooks/useCategories";
 
 interface CategoryListProps {
@@ -12,6 +12,24 @@ const CategoryList = ({
 }: CategoryListProps) => {
   const { colorMode } = useColorMode();
   const {categories, loading, error } = useCategories();
+
+  if (loading) {
+    return (
+     
+      <Flex
+      wrap="wrap"
+      alignItems={"flex-start"}
+      justifyContent={"flex-start"}
+      flexDir={"column"}
+      py={5}
+    >
+      <Heading fontSize={"xl"} px={5}>
+        Kategorier
+      </Heading>
+      <SkeletonText px={5} noOfLines={16} width="50%"  spacing={{base:5, lg: 9}} speed={2} />
+     </Flex>
+    );
+  }
 
   return (
     <Flex
