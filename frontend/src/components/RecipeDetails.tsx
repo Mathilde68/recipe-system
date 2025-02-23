@@ -11,12 +11,15 @@ import {
   Card,
   Button,
   useColorMode,
+  Switch,
+  HStack,
 } from "@chakra-ui/react";
 import { IoReturnUpBack } from "react-icons/io5";
 import RecipeDetailsLoading from "./RecipeDetailsLoading";
 
 import useRecipe from "../hooks/useRecipe";
 import RecipeTag from "./RecipeTag";
+import WakeLockSwitch from "./WakeLockSwitch";
 
 const img_preurl = "../img/";
 
@@ -53,7 +56,7 @@ const RecipeDetails = () => {
     <Card
       borderRadius="2xl"
       maxW="1000px"
-      mx={{ base: "1rem", md: "3rem", lg: "auto" }}
+      mx={{ base: "1rem", md: "4rem", lg: "auto" }}
       my={10}
       boxShadow={"lg"}
       bg={colorMode === "dark" ? "darkbrown.500" : "creamwhite.500"}
@@ -87,11 +90,11 @@ const RecipeDetails = () => {
       />
       <Box>
         <Heading
-          fontSize={{ base: "2xl", md: "3xl" }}
+          fontSize={{ base: "1.35rem", md: "3xl" }}
           position="relative"
           top="-35px"
           left="-25px"
-          px={8}
+          px={{ base: 5, lg: 8 }}
           py={2}
           display="inline-block"
           borderRadius="lg"
@@ -102,15 +105,21 @@ const RecipeDetails = () => {
           {recipe.title}
         </Heading>
       </Box>
-      {/* Quick info boks */}
-      {recipe.quick_info.length > 0 && (
-        <Flex
-          position="relative"
-          top={"-15px"}
-          justifyContent={"flex-end"}
-          mr={4}
-        >
+
+      {/*Screen keep on and info box */}
+      <Flex
+        position="relative"
+        top={"-15px"}
+        flexDir={{ base: "column", md: "row" }}
+        justifyContent={{ md: "space-between", lg: "flex-end" }}
+        px={{ base: 6, md: "4rem", lg: 5 }}
+        gap={4}
+      >
+        {/* Quick info boks */}
+        {recipe.quick_info.length > 0 && (
           <Flex
+            width={"fit-content"}
+            justifyContent={"center"}
             direction="row"
             border={"1px solid"}
             borderRadius={"md"}
@@ -120,10 +129,12 @@ const RecipeDetails = () => {
             py={2}
             px={3}
             gap={4}
+            height={"min-content"}
           >
             {recipe.quick_info.map((info) => (
               <Text
                 key={info}
+                height={"min-content"}
                 fontSize={{ base: "sm", md: "md" }}
                 color={
                   colorMode === "dark" ? "peachbrown.400" : "rosebrown.500"
@@ -133,20 +144,23 @@ const RecipeDetails = () => {
               </Text>
             ))}
           </Flex>
-        </Flex>
-      )}
+        )}
+
+        <WakeLockSwitch />
+      </Flex>
+
       {/* 🔥✨ Main opskrift indhold ✨🔥 */}
       <Flex
-        mt={recipe.quick_info.length > 0 ? { base: "-40px", md: "-25px" } : 2}
+        mt={recipe.quick_info.length > 0 ? { base: "0px", lg: "-25px" } : 2}
         pb={10}
-        direction={{ base: "column", md: "row" }}
+        direction={{ base: "column", lg: "row" }}
       >
         <VStack
           fontSize="1rem"
-          width={{ base: "100%", md: "30%" }}
+          width={{ base: "100%", lg: "30%" }}
           align="start"
-          px={{ base: 6, md: 8 }}
-          spacing={{ base: 5, md: 8 }}
+          px={{ base: 6, md: "4rem", lg: 8 }}
+          spacing={{ base: 5, lg: 8 }}
           minHeight={{ base: "auto", lg: "500px" }}
         >
           <Box>
@@ -171,6 +185,7 @@ const RecipeDetails = () => {
                   )}
                   {group.ingredients.map((ingredient) => (
                     <Text
+                      lineHeight={1.8}
                       key={ingredient.name}
                       color={
                         colorMode === "dark"
@@ -228,7 +243,7 @@ const RecipeDetails = () => {
           )}
         </VStack>
         {/* Divider, vises kun på desktop hvor indhold direction vises i row */}
-        <Stack minHeight="500px" display={{ base: "none", md: "flex" }}>
+        <Stack minHeight="500px" display={{ base: "none", lg: "flex" }}>
           <Divider
             minHeight="500px"
             height={"100%"}
@@ -242,10 +257,10 @@ const RecipeDetails = () => {
         </Stack>
 
         <Box
-          width={{ base: "100%", md: "70%" }}
-          p={{ base: 6, md: 4 }}
-          pt={{ base: 10, md: 0 }}
-          pl={{ base: 6, md: "5%" }}
+          width={{ base: "100%", lg: "70%" }}
+          px={{ base: 6, md: 8 }}
+          pt={{ base: 10, lg: 0 }}
+          pl={{ base: 6, md: "4rem", lg: "5rem" }}
         >
           <VStack align="start" spacing={10}>
             {recipe.procedure_steps.map((step) => (

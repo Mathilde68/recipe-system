@@ -1,7 +1,7 @@
 import {
   Box,
   Flex,
-  Text,
+  Text,Switch
  
 } from "@chakra-ui/react";
 
@@ -69,7 +69,11 @@ const RecipeList = ({
   }
   
   return (
+
+  
     <Flex direction="column" px={{ base: 5, md: 10 }} pb={10}>
+
+
       
       {!filteredRecipes.length ? (
         <Text fontSize="l" textAlign="center">
