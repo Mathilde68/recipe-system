@@ -167,7 +167,7 @@ const RecipeDetails = () => {
             <Text fontSize={"1.1rem"} fontWeight="bold">
               Ingredienser
             </Text>
-            <VStack fontSize="0.9rem" align="start" spacing={4} direction="row">
+            <VStack align="start" spacing={4} direction="row">
               {recipe.ingredient_groups.map((group) => (
                 <Box key={group.name}>
                   {/* Vis kun titel group.name hvis der er flere ingrediensgrupper */}

@@ -17,10 +17,10 @@ const RecipeDetailsLoading = () => {
   return (
     <Card
       borderRadius="2xl"
-      maxW={{base:"100%", md: "1000px"}}
-      mx={{ base: "1rem", md: "3rem", lg: "auto" }}
+      maxW="1000px"
+      mx={{ base: "1rem", md: "4rem", lg: "auto" }}
       my={10}
-      boxShadow="lg"
+      boxShadow={"lg"}
       bg={colorMode === "dark" ? "darkbrown.500" : "creamwhite.500"}
     >
       {/* Tilbage knap */}
@@ -54,18 +54,13 @@ const RecipeDetailsLoading = () => {
         borderRadius="lg"
         zIndex={1}
       >
-        <Skeleton
-          height="3rem"
-          width="20rem"
-          borderRadius="lg"
-          speed={2}
-        />
+        <Skeleton height="3rem" width="20rem" borderRadius="lg" speed={2} />
       </Box>
 
       {/* Hovedindhold placeholder */}
-      <Flex direction={{ base: "column", md: "row" }} px={6} pb={10} gap={6}>
+      <Flex direction={{ base: "column", lg: "row" }} px={6} pb={10} gap={6}>
         {/* ingredienser, kategori og tags */}
-        <VStack align="start" spacing={6} width={{ base: "100%", md: "30%" }}>
+        <VStack align="start" spacing={6} width={{ base: "100%", lg: "30%" }}>
           <Box width={"100%"}>
             <Skeleton
               height="30px"
@@ -109,12 +104,12 @@ const RecipeDetailsLoading = () => {
         <Skeleton
           height="400px"
           width="2px"
-          display={{ base: "none", md: "block" }}
+          display={{ base: "none", lg: "block" }}
           speed={2}
         />
 
         {/* Recipe text */}
-        <VStack align="start" spacing={6} width={{ base: "100%", md: "70%" }}>
+        <VStack align="start" spacing={6} width={{ base: "100%", lg: "70%" }}>
           <SkeletonText noOfLines={1} width="20%" speed={2} />
           <SkeletonText
             noOfLines={6}
