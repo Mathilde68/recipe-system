@@ -21,7 +21,7 @@ const NavBar = () => {
         width={{ base: "calc(50% + 32px)", md: "calc(50% + 124px)", lg: "100%" }}
       >
         <HStack>
-          <ChakraLink as={ReactRouterLink} to="/">
+          <ChakraLink as={ReactRouterLink} to="/" aria-label="Home">
             <MdBakeryDining size={"4rem"} color="#F0B690" />
           </ChakraLink>
           <Heading  display={{ base: 'none', md:'block' }} size={{ base: "none", lg: "md" }}>

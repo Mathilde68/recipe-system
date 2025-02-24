@@ -25,7 +25,7 @@ const RecipeList = ({
   selectedIngredients,
   selectedDiet,searchQuery
 }: RecipeListProps) => {
-  const { recipes, loading, error } = useRecipes(); // Destructure the returned object
+  const { recipes, loading, error } = useRecipes(); 
 
 
 // Handler for filtering recipes based on selected category, diet and ingredients

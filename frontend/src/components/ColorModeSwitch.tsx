@@ -7,6 +7,7 @@ const ColorModeSwitch = () => {
     <HStack>
        <MdDarkMode size="1.5rem" color="#EEDED9"/>
       <Switch
+        aria-label="Dark mode switch"
         onChange={toggleColorMode}
         colorScheme="peachbrown"
         color={"peachbrown.500"}

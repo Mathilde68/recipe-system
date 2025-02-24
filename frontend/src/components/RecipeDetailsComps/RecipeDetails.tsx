@@ -7,7 +7,7 @@ import {
   Stack,
   Divider,
   Card,
-  useColorMode
+  useColorMode,
 } from "@chakra-ui/react";
 import RecipeDetailsSkeleton from "./RecipeDetailsSkeleton";
 
@@ -26,7 +26,7 @@ const RecipeDetails = () => {
 
   const { id = "" } = useParams<{ id: string }>();
 
-  const { recipe, loading, error } = useRecipe(id); 
+  const { recipe, loading, error } = useRecipe(id);
 
   if (error) {
     return (
@@ -59,7 +59,7 @@ const RecipeDetails = () => {
       bg={colorMode === "dark" ? "darkbrown.500" : "creamwhite.500"}
     >
       {/* Tilbage knap ✨✨ */}
-     <BackButton />
+      <BackButton />
 
       <Image
         src={img_url}
@@ -99,7 +99,7 @@ const RecipeDetails = () => {
       >
         {/* Quick info boks */}
         {recipe.quick_info.length > 0 && (
-        <RecipeQuickInfo quickInfo={recipe.quick_info} />
+          <RecipeQuickInfo quickInfo={recipe.quick_info} />
         )}
 
         <WakeLockSwitch />
@@ -132,7 +132,7 @@ const RecipeDetails = () => {
           />
         </Stack>
         {/* Fremgangsmåde } */}
-       <RecipeProcedure procedure_steps={recipe.procedure_steps} />
+        <RecipeProcedure procedure_steps={recipe.procedure_steps} />
       </Flex>
     </Card>
   );
