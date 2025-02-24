@@ -11,9 +11,9 @@ const CategoryList = ({
   selectedCategory,
 }: CategoryListProps) => {
   const { colorMode } = useColorMode();
-  const {categories, loading, error } = useCategories();
+  const {categories,isLoading, error } = useCategories();
 
-  if (loading) {
+  if (isLoading) {
     return (
      
       <Flex

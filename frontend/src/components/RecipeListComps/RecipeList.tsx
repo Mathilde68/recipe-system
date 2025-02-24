@@ -25,7 +25,8 @@ const RecipeList = ({
   selectedIngredients,
   selectedDiet,searchQuery
 }: RecipeListProps) => {
-  const { recipes, loading, error } = useRecipes(); 
+const { recipes, isLoading, error } = useRecipes();
+
 
 
 // Handler for filtering recipes based on selected category, diet and ingredients
@@ -54,7 +55,7 @@ const RecipeList = ({
 
 
 
-  if (loading) {
+  if (isLoading) {
     return (
      
       <Flex wrap="wrap" justify="space-between" px={{ base: 5, md: 10 }}>

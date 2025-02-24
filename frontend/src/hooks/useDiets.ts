@@ -10,8 +10,9 @@ export interface Diet {
 }
 
 const useDiets = () => {
-  const { data, loading, error } = useData<Diet>('diets');
-  return { diets: data, loading, error };
+  const { data, isLoading, error } = useData<Diet>('diets');
+  return { diets: data || [], isLoading, error }; 
 };
+
 
 export default useDiets;

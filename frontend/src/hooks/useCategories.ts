@@ -8,8 +8,8 @@ export interface Category {
 }
 
 const useCategories = () => {
-  const { data, loading, error } = useData<Category>('categories');
-  return { categories: data, loading, error };
+  const { data, isLoading, error } = useData<Category>('categories');
+  return { categories: data || [], isLoading, error }; 
 };
 
 export default useCategories;

@@ -38,8 +38,10 @@ export interface Recipe {
 }
 
 const useRecipe = (id: string) => {
-  const { data, loading, error } = useDataSingle<Recipe>(`recipes/${id}`);
-  console.log(data);
-  return { recipe: data, loading, error };
+  const { data, isLoading, error } = useDataSingle<Recipe>(`recipes/${id}`);
+  
+  return { recipe: data, isLoading, error }; 
 };
+
+
 export default useRecipe;

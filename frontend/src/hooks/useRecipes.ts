@@ -38,7 +38,9 @@ export interface Recipe {
 }
 
 const useRecipes = () => {
-  const { data, loading, error } = useData<Recipe>('recipes');
-  return { recipes: data, loading, error };
+  const { data, isLoading, error } = useData<Recipe>('recipes');
+  
+  return { recipes: data || [], isLoading, error }; 
 };
+
 export default useRecipes;

@@ -1,32 +1,13 @@
-import { useEffect, useState } from 'react';
-import axios from 'axios';
-
-
-
+import { useQuery } from '@tanstack/react-query';
+import apiClient from './api-client';
 
 const useData = <T>(endpoint: string) => {
-  const [data, setData] = useState<T[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<Error | null>(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get<T[]>(`${import.meta.env.VITE_API_URL}${endpoint}`);
-        if (response.status === 200) {
-          setData(response.data);
-        }
-      } catch (err) {
-        setError(err as Error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchData();
-  }, []);
-  return { data, loading, error }; // Return data as an array of T
+  return useQuery<T[], Error>({
+    queryKey: [endpoint], 
+    queryFn: () =>
+      apiClient.get<T[]>(endpoint).then((res) => res.data), 
+    staleTime: 1000 * 60 * 60 * 5, // Cache data for 5 hours
+  });
 };
 
 export default useData;
-

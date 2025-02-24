@@ -7,10 +7,11 @@ export interface Ingredient {
   name: string;
 }
 
-const useIngredients = () => {
 
-  const { data, loading, error } = useData<Ingredient>('ingredients');
-  return { ingredients: data, loading, error };
+const useIngredients = () => {
+  const { data, isLoading, error } = useData<Ingredient>('ingredients');
+  
+  return { ingredients: data || [], isLoading, error }; 
 };
 
 export default useIngredients;

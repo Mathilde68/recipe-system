@@ -26,7 +26,7 @@ const RecipeDetails = () => {
 
   const { id = "" } = useParams<{ id: string }>();
 
-  const { recipe, loading, error } = useRecipe(id);
+  const { recipe,isLoading, error } = useRecipe(id);
 
   if (error) {
     return (
@@ -36,7 +36,7 @@ const RecipeDetails = () => {
     );
   }
 
-  if (loading) {
+  if (isLoading) {
     return <RecipeDetailsSkeleton />;
   }
 

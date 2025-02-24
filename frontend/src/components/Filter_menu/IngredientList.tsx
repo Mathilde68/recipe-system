@@ -32,7 +32,7 @@ const IngredientList = ({
   selectedIngredients,
 }: IngredientListProps) => {
   const { colorMode } = useColorMode();
-  const { ingredients, loading, error } = useIngredients();
+  const { ingredients,isLoading, error } = useIngredients();
   const [searchTerm, setSearchTerm] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
   const menuRef = useRef<HTMLButtonElement>(null);
