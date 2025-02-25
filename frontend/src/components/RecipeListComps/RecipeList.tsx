@@ -1,7 +1,6 @@
 import {
-  Box,
   Flex,
-  Text,Switch
+  Text
  
 } from "@chakra-ui/react";
 

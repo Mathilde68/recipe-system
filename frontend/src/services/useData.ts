@@ -6,7 +6,7 @@ const useData = <T>(endpoint: string) => {
     queryKey: [endpoint], 
     queryFn: () =>
       apiClient.get<T[]>(endpoint).then((res) => res.data), 
-    staleTime: 1000 * 60 * 60 * 5, // Cache data for 5 hours
+    staleTime: 1000 * 60 * 60 * 5, 
   });
 };
 

@@ -1,7 +1,4 @@
-import { Grid, GridItem, Heading, Box, IconButton, Input,
-  InputLeftAddon,
-  InputGroup } from "@chakra-ui/react";
-  import { FaSearch } from "react-icons/fa";
+import { Grid, GridItem, Heading, Box } from "@chakra-ui/react";
 import { useState, useEffect,useRef  } from "react";
 import { useSearchParams } from "react-router-dom";
 import {
