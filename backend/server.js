@@ -17,10 +17,18 @@ app.use(categories)
 app.use(ingredients)
 app.use(diets)
 
+async function startServer() {
+    try {
+        await connect.connectToServer(); // wait for DB
 
-app.listen(PORT, () => {
+        app.listen(PORT, () => {
+            console.log(`Server is running on port ${PORT}`);
+        });
 
-    connect.connectToServer();
-    console.log(`Server is running on port ${PORT}`);
-});
+    } catch (err) {
+        console.error("Failed to start server:", err);
+    }
+}
+
+startServer();
 
