@@ -1,0 +1,7 @@
+<h1>My recipes</h1>
+@for (recipe of recipes(); track recipe._id) {
+    <article class="card">
+    <h4>{{recipe.title}}</h4>
+    <p>{{recipe.category.name}}</p>
+    </article>
+}
